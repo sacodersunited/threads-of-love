@@ -5,8 +5,17 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  Threads Of Love San Antonio
 </h1>
+
+## 💫 Staging Netlify Link 
+
+[https://zealous-shaw-c82984.netlify.com/](https://zealous-shaw-c82984.netlify.com/)
+
+## 💫Master Netlify Link 
+
+[https://pedantic-easley-3bd320.netlify.com/](https://pedantic-easley-3bd320.netlify.com/)
+
 
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
@@ -23,7 +32,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
     ```
 
-1.  **Start developing.**
+2.  **Start developing.**
 
     Navigate into your new site’s directory and start it up.
 
@@ -32,7 +41,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     gatsby develop
     ```
 
-1.  **Open the source code and start editing!**
+3.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
 
