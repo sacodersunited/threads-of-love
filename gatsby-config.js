@@ -1,4 +1,7 @@
 const config = require("gatsby-plugin-config").default
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 module.exports = {
   siteMetadata: {
@@ -13,6 +16,19 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-cloudinary`,
+      options: {
+        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+        apiKey: process.env.CLOUDINARY_API_KEY,
+        apiSecret: process.env.CLOUDINARY_API_SECRET,
+        resourceType: "",
+        type: ``,
+        maxResults: 500,
+        tags: true,
+        prefix: ``,
       },
     },
     `gatsby-transformer-sharp`,
