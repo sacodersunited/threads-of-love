@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { Container } from "react-bootstrap"
 import Header from "./header"
 import Footer from "./footer"
-import "bootstrap/dist/css/bootstrap.min.css"
+// import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,6 +26,12 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossOrigin="anonymous"
+      />
       <Header siteTitle={data.site.siteMetadata.title} />
       <Container>
         <main className="pt-5" style={{ minHeight: "800px" }}>

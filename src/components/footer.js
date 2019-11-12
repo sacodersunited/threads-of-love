@@ -1,5 +1,5 @@
 import React from "react"
-import { Navbar, Nav, Container, Col } from "react-bootstrap"
+import { Navbar, Container, Col } from "react-bootstrap"
 import { Link } from "gatsby"
 import { FaFacebookF } from "react-icons/fa"
 
