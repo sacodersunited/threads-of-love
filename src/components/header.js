@@ -1,34 +1,44 @@
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { Link } from "gatsby"
+import { Navbar, Nav, Button, Container } from "react-bootstrap"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
+  <Navbar bg="light" expand="lg">
+    <Container>
+      <Link to="/">
+        <Navbar.Brand> {siteTitle}</Navbar.Brand>
+      </Link>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto">
+          <Link to="/our-work" className="nav-link" activeClassName="active">
+            Our Work
+          </Link>
+          <Link to="/about" className="nav-link" activeClassName="active">
+            About Us
+          </Link>
+          <Link
+            to="/get-involved"
+            className="nav-link"
+            activeClassName="active"
+          >
+            Get Involved
+          </Link>
+          <Link to="/volunteers" className="nav-link" activeClassName="active">
+            Volunteers
+          </Link>
+          <Link to="/calendar" className="nav-link" activeClassName="active">
+            Calendar
+          </Link>
+        </Nav>
+        <Link to="/donate">
+          <Button variant="primary">Donate Now</Button>
         </Link>
-      </h1>
-    </div>
-  </header>
+      </Navbar.Collapse>
+    </Container>
+  </Navbar>
 )
 
 Header.propTypes = {
@@ -36,7 +46,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  siteTitle: `TOL`,
 }
 
 export default Header
