@@ -133,7 +133,7 @@ const ourWorkLayout = () => (
         )
       })}
 
-      {["MEMORY BOXES", "DIAPER SHIRTS", "LEG WARMERS"].map(row => {
+      {["MEMORY BOXES", "DIAPER SHIRTS", "LEG WARMERS"].map((row, index) => {
         return (
           <Col md={4}>
             <Card

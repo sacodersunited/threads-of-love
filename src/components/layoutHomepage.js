@@ -8,14 +8,14 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import { Container } from "react-bootstrap"
 import Header from "./header"
 import Footer from "./footer"
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import Hero from "./hero"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
+    query SiteTitleQueryHomepage {
       site {
         siteMetadata {
           title
@@ -26,12 +26,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <Container>
-        <main style={{ minHeight: "800px", paddingTop: "96px" }}>
-          {children}
-        </main>
-      </Container>
+      <Header siteTitle={data.site.siteMetadata.title} homepage={true} />
+      <Hero />
+
       <Footer />
     </>
   )
