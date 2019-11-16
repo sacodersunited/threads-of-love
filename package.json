@@ -5,17 +5,19 @@
   "version": "0.1.0",
   "author": "Frank Pigeon and Paul Castillo aka sacodersunited",
   "dependencies": {
-    "babel-plugin-styled-components": "^1.10.6",
+    "@emotion/core": "^10.0.22",
+    "@emotion/styled": "^10.0.23",
+    "@hot-loader/react-dom": "^16.11.0",
     "bootstrap": "^4.3.1",
     "gatsby": "^2.17.6",
     "gatsby-image": "^2.2.30",
     "gatsby-plugin-config": "^1.0.7",
+    "gatsby-plugin-emotion": "^4.1.14",
     "gatsby-plugin-manifest": "^2.2.25",
     "gatsby-plugin-netlify-cache": "^1.2.0",
     "gatsby-plugin-offline": "^3.0.17",
     "gatsby-plugin-react-helmet": "^3.1.13",
     "gatsby-plugin-sharp": "^2.2.34",
-    "gatsby-plugin-styled-components": "^3.1.11",
     "gatsby-source-cloudinary": "^0.1.8",
     "gatsby-source-filesystem": "^2.1.35",
     "gatsby-transformer-sharp": "^2.3.1",
@@ -24,8 +26,7 @@
     "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
-    "react-icons": "^3.8.0",
-    "styled-components": "^4.4.1"
+    "react-icons": "^3.8.0"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
