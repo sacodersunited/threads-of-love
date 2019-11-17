@@ -10,6 +10,18 @@ class OurWorkLayout extends React.Component {
     this.state = {
       selected: "",
     }
+
+    this.handleCategory = this.handleCategory.bind(this)
+  }
+
+  handleCategory(e, cat) {
+    console.log("handleCat", e, cat)
+
+    let category = this.state.selected
+    category = cat
+    this.setState({
+      selected: category,
+    })
   }
 
   render() {
@@ -24,7 +36,7 @@ class OurWorkLayout extends React.Component {
 
     return (
       <Container>
-        <h1>Our Work</h1>
+        <h1>{this.state.selected}</h1>
 
         <Row
           style={{ minHeight: "500px" }}
@@ -184,7 +196,10 @@ class OurWorkLayout extends React.Component {
                     cursor: pointer;
                   `}
                 >
-                  <Card.Img src={bottomImages[index + 1]} />
+                  <Card.Img
+                    src={bottomImages[index + 1]}
+                    onClick={e => this.handleCategory(e, row)}
+                  />
                   <Card.ImgOverlay className="d-flex">
                     <Card.Title className="d-flex align-items-center justify-content-center mx-auto h-100">
                       {row}
