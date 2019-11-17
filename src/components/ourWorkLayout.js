@@ -3,6 +3,18 @@ import { Container, Row, Col, Card, Image } from "react-bootstrap"
 import { css } from "@emotion/core"
 import "../css/ourwork.css"
 
+const categories = [
+  "OUR WORK",
+  "CAPS",
+  "BOOTIES",
+  "QUILTS & BLANKETS",
+  "CASKETS",
+  "POSITIONING & COVERS",
+  "MEMORY BOXES",
+  "DIAPER SHIRTS",
+  "LEG WARMERS",
+]
+
 class OurWorkLayout extends React.Component {
   constructor(props) {
     super(props)
@@ -24,7 +36,7 @@ class OurWorkLayout extends React.Component {
 
   render() {
     const newImages = this.props.images.map(imageUrl =>
-      imageUrl.node.url.replace("upload/", "upload/w_100,h_100,c_scale/")
+      imageUrl.node.url.replace("upload/", "upload/w_200,h_200,c_scale/")
     )
 
     const bottomImages = this.props.images.map(imageUrl =>
@@ -36,18 +48,33 @@ class OurWorkLayout extends React.Component {
       <Container>
         <h1>{this.state.selected}</h1>
 
+        {/* Mobile only */}
+        <nav class="breadcrumb" id="mobileselect">
+          {categories.map(cat => {
+            return (
+              <a
+                class="breadcrumb-item"
+                href="#"
+                onClick={e => this.handleCategory(e, cat)}
+              >
+                {cat}
+              </a>
+            )
+          })}
+        </nav>
+
         <Row
           style={{ minHeight: "500px" }}
           className="align-items-center justify-content-center mx-auto"
         >
           <Col md={6}>
-            <Card>
+            <Card className="main-card" id="maincard">
               <Image
                 src={this.props.images[0].node.url.replace(
                   "upload/",
                   "upload/w_400,h_400,c_scale/"
                 )}
-                style={{ maxHeight: "400px" }}
+                className="main"
               />
             </Card>
           </Col>
@@ -58,32 +85,17 @@ class OurWorkLayout extends React.Component {
             >
               <Col md={3}>
                 <Card>
-                  <Card.Img
-                    src={newImages[0]}
-                    style={{
-                      maxHeight: "100px",
-                    }}
-                  />
+                  <Card.Img src={newImages[0]} className="thumbs" />
                 </Card>
               </Col>
               <Col md={3}>
                 <Card>
-                  <Card.Img
-                    src={newImages[1]}
-                    style={{
-                      maxHeight: "100px",
-                    }}
-                  />
+                  <Card.Img src={newImages[1]} className="thumbs" />
                 </Card>
               </Col>
               <Col md={3}>
                 <Card>
-                  <Card.Img
-                    src={newImages[2]}
-                    style={{
-                      maxHeight: "100px",
-                    }}
-                  />
+                  <Card.Img src={newImages[2]} className="thumbs" />
                 </Card>
               </Col>
             </Row>
@@ -92,45 +104,18 @@ class OurWorkLayout extends React.Component {
               className="align-items-center justify-content-center mx-auto"
             >
               <Col md={3}>
-                <Card
-                  style={{
-                    maxHeight: "100px",
-                  }}
-                >
-                  <Card.Img
-                    src={newImages[3]}
-                    style={{
-                      maxHeight: "100px",
-                    }}
-                  />
+                <Card>
+                  <Card.Img src={newImages[3]} className="thumbs" />
                 </Card>
               </Col>
               <Col md={3}>
-                <Card
-                  style={{
-                    maxHeight: "100px",
-                  }}
-                >
-                  <Card.Img
-                    src={newImages[4]}
-                    style={{
-                      maxHeight: "100px",
-                    }}
-                  />
+                <Card>
+                  <Card.Img src={newImages[4]} className="thumbs" />
                 </Card>
               </Col>
               <Col md={3}>
-                <Card
-                  style={{
-                    maxHeight: "100px",
-                  }}
-                >
-                  <Card.Img
-                    src={newImages[5]}
-                    style={{
-                      maxHeight: "100px",
-                    }}
-                  />
+                <Card>
+                  <Card.Img src={newImages[5]} className="thumbs" />
                 </Card>
               </Col>
             </Row>
@@ -139,51 +124,24 @@ class OurWorkLayout extends React.Component {
               className="align-items-center justify-content-center mx-auto"
             >
               <Col md={3}>
-                <Card
-                  style={{
-                    maxHeight: "100px",
-                  }}
-                >
-                  <Card.Img
-                    src={newImages[6]}
-                    style={{
-                      maxHeight: "100px",
-                    }}
-                  />
+                <Card>
+                  <Card.Img src={newImages[6]} className="thumbs" />
                 </Card>
               </Col>
               <Col md={3}>
-                <Card
-                  style={{
-                    maxHeight: "100px",
-                  }}
-                >
-                  <Card.Img
-                    src={newImages[7]}
-                    style={{
-                      maxHeight: "100px",
-                    }}
-                  />
+                <Card>
+                  <Card.Img src={newImages[7]} className="thumbs" />
                 </Card>
               </Col>
               <Col md={3}>
-                <Card
-                  style={{
-                    maxHeight: "100px",
-                  }}
-                >
-                  <Card.Img
-                    src={newImages[8]}
-                    style={{
-                      maxHeight: "100px",
-                    }}
-                  />
+                <Card>
+                  <Card.Img src={newImages[8]} className="thumbs" />
                 </Card>
               </Col>
             </Row>
           </Col>
         </Row>
-        <Row>
+        <Row id="category-row">
           {["OUR WORK", "CAPS", "BOOTIES"].map((row, index) => {
             return (
               <Col md={4} key={`${row}${index}`}>
@@ -197,6 +155,7 @@ class OurWorkLayout extends React.Component {
                   <Card.Img
                     src={bottomImages[index + 1]}
                     onClick={e => this.handleCategory(e, row)}
+                    className="category"
                   />
                   <Card.ImgOverlay className="d-flex">
                     <Card.Title className="d-flex align-items-center justify-content-center mx-auto h-100">
@@ -219,7 +178,11 @@ class OurWorkLayout extends React.Component {
                       cursor: pointer;
                     `}
                   >
-                    <Card.Img src={bottomImages[index]} />
+                    <Card.Img
+                      src={bottomImages[index]}
+                      className="category"
+                      onClick={e => this.handleCategory(e, row)}
+                    />
                     <Card.ImgOverlay className="d-flex">
                       <Card.Title className="d-flex align-items-center justify-content-center mx-auto h-100">
                         {row}
@@ -242,7 +205,11 @@ class OurWorkLayout extends React.Component {
                       cursor: pointer;
                     `}
                   >
-                    <Card.Img src={bottomImages[index + 6]} />
+                    <Card.Img
+                      src={bottomImages[index + 6]}
+                      className="category"
+                      onClick={e => this.handleCategory(e, row)}
+                    />
                     <Card.ImgOverlay className="d-flex">
                       <Card.Title className="d-flex align-items-center justify-content-center mx-auto h-100">
                         {row}
