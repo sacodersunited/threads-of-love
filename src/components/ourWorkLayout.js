@@ -8,15 +8,13 @@ class OurWorkLayout extends React.Component {
     super(props)
 
     this.state = {
-      selected: "",
+      selected: "Our Work",
     }
 
     this.handleCategory = this.handleCategory.bind(this)
   }
 
   handleCategory(e, cat) {
-    console.log("handleCat", e, cat)
-
     let category = this.state.selected
     category = cat
     this.setState({
@@ -186,7 +184,7 @@ class OurWorkLayout extends React.Component {
           </Col>
         </Row>
         <Row>
-          {["OUR WORK", "CAPS", "BOOTIES"].map((row, index, items) => {
+          {["OUR WORK", "CAPS", "BOOTIES"].map((row, index) => {
             return (
               <Col md={4} key={`${row}${index}`}>
                 <Card

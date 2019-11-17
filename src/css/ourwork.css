@@ -8,12 +8,12 @@
 
 .card-img:hover {
   opacity: 1;
-  z-index: 1;
 }
-
-.card-img-overlay {
-  z-index: 0;
-}
+/* 
+.card-img:hover + .card-img-overlay {
+  z-index: 2;
+  opacity: 1;
+} */
 
 @media only screen and (max-width: 360px) {
   .strategic {
