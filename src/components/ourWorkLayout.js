@@ -194,7 +194,6 @@ class OurWorkLayout extends React.Component {
               )
             }
           )}
-
           {["MEMORY BOXES", "DIAPER SHIRTS", "LEG WARMERS"].map(
             (row, index) => {
               return (
