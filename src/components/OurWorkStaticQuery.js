@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import OurWorkLayout from "./OurWorkLayout"
+import OurWorkPage from "./OurWorkPage"
 
 const OurWorkStaticQuery = props => (
   <StaticQuery
@@ -25,7 +25,7 @@ const OurWorkStaticQuery = props => (
         }
       }
     `}
-    render={data => <OurWorkLayout images={data.allCloudinaryMedia.edges} />}
+    render={data => <OurWorkPage images={data.allCloudinaryMedia.edges} />}
   />
 )
 export default OurWorkStaticQuery

@@ -15,7 +15,7 @@ const categories = [
   "LEG WARMERS",
 ]
 
-class OurWorkLayout extends React.Component {
+class OurWorkPage extends React.Component {
   constructor(props) {
     super(props)
 
@@ -226,4 +226,4 @@ class OurWorkLayout extends React.Component {
   }
 }
 
-export default OurWorkLayout
+export default OurWorkPage
