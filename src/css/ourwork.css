@@ -18,7 +18,11 @@
   max-height: 100px;
 }
 
-#mobileselect {
+#mobile-select {
+  display: none;
+}
+
+#mobile-title {
   display: none;
 }
 
@@ -35,11 +39,19 @@
     border-width: 0px;
   }
 
-  #mobileselect {
+  #mobile-select {
+    display: block;
+  }
+
+  #mobile-title {
     display: block;
   }
 
   #category-row {
+    display: none;
+  }
+
+  #desktop-title {
     display: none;
   }
 }

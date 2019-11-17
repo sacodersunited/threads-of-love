@@ -21,16 +21,20 @@ class OurWorkLayout extends React.Component {
 
     this.state = {
       selected: "Our Work",
+      mobileSelectIndex: 0,
     }
 
     this.handleCategory = this.handleCategory.bind(this)
   }
 
-  handleCategory(e, cat) {
+  handleCategory(e, cat, indexNum) {
     let category = this.state.selected
+    let menuIndex = this.state.mobileSelectIndex
     category = cat
+    menuIndex = indexNum
     this.setState({
       selected: category,
+      mobileSelectIndex: menuIndex,
     })
   }
 
@@ -46,16 +50,21 @@ class OurWorkLayout extends React.Component {
 
     return (
       <Container>
-        <h1>{this.state.selected}</h1>
+        <h1 id="desktop-title">{this.state.selected}</h1>
 
         {/* Mobile only */}
-        <nav class="breadcrumb" id="mobileselect">
-          {categories.map(cat => {
+        <h3 id="mobile-title">{this.state.selected}</h3>
+        <nav class="breadcrumb" id="mobile-select" aria-label="breadcrumb">
+          {categories.map((cat, index) => {
             return (
               <a
-                class="breadcrumb-item"
+                class={
+                  index === this.state.mobileSelectIndex
+                    ? "breadcrumb-item active"
+                    : "breadcrumb-item"
+                }
                 href="#"
-                onClick={e => this.handleCategory(e, cat)}
+                onClick={e => this.handleCategory(e, cat, index)}
               >
                 {cat}
               </a>
