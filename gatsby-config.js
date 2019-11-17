@@ -50,5 +50,6 @@ module.exports = {
     // `gatsby-plugin-offline`,
     `gatsby-plugin-netlify-cache`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-emotion`,
   ],
 }
