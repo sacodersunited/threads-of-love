@@ -12,6 +12,7 @@ import Header from "./header"
 import Footer from "./footer"
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import Hero from "./hero"
+import ContactUsForm from "../components/ContactUsForm"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,6 +29,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} homepage={true} />
       <Hero />
+      <ContactUsForm />
 
       <Footer />
     </>
