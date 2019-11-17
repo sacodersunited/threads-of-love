@@ -46,7 +46,7 @@ class OurWorkLayout extends React.Component {
     const bottomImages = this.props.images.map(imageUrl =>
       imageUrl.node.url.replace("upload/", "upload/w_340,c_scale/")
     )
-    console.log("this.props", this.props)
+    console.log("this.props", this.props, newImages, bottomImages)
 
     return (
       <Container>
