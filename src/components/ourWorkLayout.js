@@ -4,17 +4,14 @@ import { css } from "@emotion/core"
 import "../css/ourwork.css"
 
 const ourWorkLayout = props => {
-  const newImages = props.images.map(imageUrl => {
-    const returnUrl = imageUrl.node.url
-    const newUrl = returnUrl.replace("upload/", "upload/w_100,h_100,c_scale/")
-    return newUrl
-  })
+  const newImages = props.images.map(imageUrl =>
+    imageUrl.node.url.replace("upload/", "upload/w_100,h_100,c_scale/")
+  )
 
-  const bottomImages = props.images.map(imageUrl => {
-    const returnUrl = imageUrl.node.url
-    const newUrl = returnUrl.replace("upload/", "upload/w_340,c_scale/")
-    return newUrl
-  })
+  const bottomImages = props.images.map(imageUrl =>
+    imageUrl.node.url.replace("upload/", "upload/w_340,c_scale/")
+  )
+
   console.log("newImages", newImages)
   console.log("bottom IMages", bottomImages)
   console.log("props", props)
