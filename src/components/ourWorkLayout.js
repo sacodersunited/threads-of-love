@@ -73,25 +73,23 @@ class OurWorkLayout extends React.Component {
         </nav>
 
         <Row
-          style={{ minHeight: "500px" }}
           className="align-items-center justify-content-center mx-auto"
+          id="main-row"
         >
           <Col md={6}>
-            <Card className="main-card" id="maincard">
+            <Card id="maincard" style={{ minHeight: "550px" }}>
               <Image
                 src={this.props.images[0].node.url.replace(
                   "upload/",
-                  "upload/w_400,h_400,c_scale/"
+                  "upload/w_500,h_550,c_scale/"
                 )}
-                className="main"
+                className="main-image"
+                style={{ maxHeight: "550px" }}
               />
             </Card>
           </Col>
           <Col md={6}>
-            <Row
-              style={{ paddingBottom: "10px" }}
-              className="align-items-center justify-content-center mx-auto"
-            >
+            <Row className="align-items-center justify-content-center mx-auto items">
               <Col md={3}>
                 <Card>
                   <Card.Img src={newImages[0]} className="thumbs" />
@@ -108,10 +106,7 @@ class OurWorkLayout extends React.Component {
                 </Card>
               </Col>
             </Row>
-            <Row
-              style={{ paddingBottom: "10px" }}
-              className="align-items-center justify-content-center mx-auto"
-            >
+            <Row className="align-items-center justify-content-center mx-auto items">
               <Col md={3}>
                 <Card>
                   <Card.Img src={newImages[3]} className="thumbs" />
@@ -128,10 +123,7 @@ class OurWorkLayout extends React.Component {
                 </Card>
               </Col>
             </Row>
-            <Row
-              style={{ paddingBottom: "10px" }}
-              className="align-items-center justify-content-center mx-auto"
-            >
+            <Row className="align-items-center justify-content-center mx-auto items">
               <Col md={3}>
                 <Card>
                   <Card.Img src={newImages[6]} className="thumbs" />

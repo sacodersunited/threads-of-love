@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import OurWorkLayout from "./ourWorkLayout"
+import OurWorkLayout from "./OurWorkLayout"
 
 const OurWorkStaticQuery = props => (
   <StaticQuery

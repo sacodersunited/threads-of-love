@@ -10,7 +10,11 @@
   opacity: 1;
 }
 
-.main-card {
+#main-row {
+  padding-bottom: 10px;
+}
+
+#maincard {
   max-height: 400px;
 }
 
@@ -26,17 +30,27 @@
   display: none;
 }
 
+.items {
+  padding-bottom: 10px;
+}
+
+.main-image {
+  width: 100%;
+  /* max-height: 400px; */
+}
+
 @media only screen and (max-width: 360px) {
   .thumbs {
     min-height: 300px;
   }
 
-  .main {
+  .main-image {
     display: none;
   }
 
   #maincard {
     border-width: 0px;
+    display: none;
   }
 
   #mobile-select {
@@ -53,5 +67,9 @@
 
   #desktop-title {
     display: none;
+  }
+
+  .items {
+    padding-bottom: 0px;
   }
 }
