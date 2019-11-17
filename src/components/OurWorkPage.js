@@ -40,13 +40,13 @@ class OurWorkPage extends React.Component {
 
   render() {
     const newImages = this.props.images.map(imageUrl =>
-      imageUrl.node.url.replace("upload/", "upload/w_200,h_200,c_scale/")
+      imageUrl.node.secure_url.replace("upload/", "upload/w_200,h_200,c_scale/")
     )
 
     const bottomImages = this.props.images.map(imageUrl =>
-      imageUrl.node.url.replace("upload/", "upload/w_340,c_scale/")
+      imageUrl.node.secure_url.replace("upload/", "upload/w_340,c_scale/")
     )
-    console.log("this.props", this.props, newImages, bottomImages)
+    console.log("this.props", this.props)
 
     return (
       <Container>
@@ -54,11 +54,12 @@ class OurWorkPage extends React.Component {
 
         {/* Mobile only */}
         <h3 id="mobile-title">{this.state.selected}</h3>
-        <nav class="breadcrumb" id="mobile-select" aria-label="breadcrumb">
+        <nav className="breadcrumb" id="mobile-select" aria-label="breadcrumb">
           {categories.map((cat, index) => {
             return (
               <a
-                class={
+                key={`nav-${index}`}
+                className={
                   index === this.state.mobileSelectIndex
                     ? "breadcrumb-item active"
                     : "breadcrumb-item"
@@ -79,7 +80,7 @@ class OurWorkPage extends React.Component {
           <Col md={6}>
             <Card id="maincard" style={{ minHeight: "550px" }}>
               <Image
-                src={this.props.images[0].node.url.replace(
+                src={this.props.images[0].node.secure_url.replace(
                   "upload/",
                   "upload/w_500,h_550,c_scale/"
                 )}
