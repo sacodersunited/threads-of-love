@@ -139,64 +139,65 @@ class ContactUsForm extends React.Component {
         <Row>
           <Col md={6}>
             <Image
+              id="contact-image"
               src={contactImage}
-              style={{ minHeight: "500px", width: "100%" }}
+              //   style={{ minHeight: "500px", width: "100%" }}
             ></Image>
           </Col>
           <Col md={6}>
-            <Carousel.Caption style={{ color: "black", textAlign: "left" }}>
-              <Form
-                validated={this.state.validated}
-                onSubmit={e => this.handleSubmit(e)}
-              >
-                <h4>GET INVOLVED</h4>
+            {/* <Carousel.Caption style={{ color: "black", textAlign: "left" }}> */}
+            <Form
+              validated={this.state.validated}
+              onSubmit={e => this.handleSubmit(e)}
+            >
+              <h4>GET INVOLVED</h4>
 
-                <Form.Group controlId="formBasicName">
-                  <Form.Label>Name</Form.Label>
+              <Form.Group controlId="formBasicName">
+                <Form.Label>Name</Form.Label>
 
-                  <Form.Control
-                    required
-                    type="text"
-                    placeholder="Name"
-                    value={this.state.contactUsForm.name}
-                    onChange={e => this.onChangeForm(e)}
-                  />
-                </Form.Group>
+                <Form.Control
+                  required
+                  type="text"
+                  placeholder="Name"
+                  value={this.state.contactUsForm.name}
+                  onChange={e => this.onChangeForm(e)}
+                />
+              </Form.Group>
 
-                <Form.Group controlId="formBasicEmail">
-                  <Form.Label>Email</Form.Label>
+              <Form.Group controlId="formBasicEmail">
+                <Form.Label>Email</Form.Label>
 
-                  <Form.Control
-                    type="email"
-                    placeholder="Email"
-                    onChange={e => this.onChangeForm(e)}
-                    value={this.state.contactUsForm.email}
-                  />
-                </Form.Group>
+                <Form.Control
+                  type="email"
+                  placeholder="Email"
+                  onChange={e => this.onChangeForm(e)}
+                  value={this.state.contactUsForm.email}
+                />
+              </Form.Group>
 
-                <Form.Group controlId="formBasicPhone">
-                  <Form.Label>Phone</Form.Label>
+              <Form.Group controlId="formBasicPhone">
+                <Form.Label>Phone</Form.Label>
 
-                  <InputMask
-                    {...this.props}
-                    mask="(999) 999-9999"
-                    maskChar=" "
-                    onChange={e => this.onChangeForm(e)}
-                    value={this.state.contactUsForm.phone}
-                  >
-                    {inputProps => (
-                      <Form.Control
-                        {...inputProps}
-                        type="tel"
-                        placeholder="Phone Number"
-                      />
-                    )}
-                  </InputMask>
-                </Form.Group>
+                <InputMask
+                  {...this.props}
+                  mask="(999) 999-9999"
+                  maskChar=" "
+                  onChange={e => this.onChangeForm(e)}
+                  value={this.state.contactUsForm.phone}
+                >
+                  {inputProps => (
+                    <Form.Control
+                      {...inputProps}
+                      type="tel"
+                      placeholder="Phone Number"
+                    />
+                  )}
+                </InputMask>
+              </Form.Group>
 
-                <Button type="submit">Submit</Button>
-              </Form>
-            </Carousel.Caption>
+              <Button type="submit">Submit</Button>
+            </Form>
+            {/* </Carousel.Caption> */}
           </Col>
         </Row>
       </Container>
