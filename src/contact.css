@@ -1,0 +1,17 @@
+.contact-container {
+  background: url("./images/so-white.png") repeat top left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#contact-image {
+  min-height: 500px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 360px) {
+  #contact-image {
+    width: 100%;
+    min-height: 400px;
+  }
+}
