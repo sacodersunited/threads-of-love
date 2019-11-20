@@ -97,43 +97,17 @@ const ourWorkLayout = () => (
       </Col>
     </Row>
     <Row>
-      {["OUR WORK", "CAPS", "BOOTIES"].map(row => {
-        return (
-          <Col md={4}>
-            <Card
-              style={{
-                padding: "10px",
-                minHeight: "250px",
-                marginBottom: "10px",
-              }}
-            >
-              <Card.Body>
-                <Card.Title>{row}</Card.Title>
-              </Card.Body>
-            </Card>
-          </Col>
-        )
-      })}
-
-      {["QUILTS & BLANKETS", "CASKETS", "POSITIONING AID COVERS"].map(row => {
-        return (
-          <Col md={4}>
-            <Card
-              style={{
-                padding: "10px",
-                minHeight: "250px",
-                marginBottom: "10px",
-              }}
-            >
-              <Card.Body>
-                <Card.Title>{row}</Card.Title>
-              </Card.Body>
-            </Card>
-          </Col>
-        )
-      })}
-
-      {["MEMORY BOXES", "DIAPER SHIRTS", "LEG WARMERS"].map((row, index) => {
+      {[
+        "OUR WORK",
+        "CAPS",
+        "BOOTIES",
+        "QUILTS & BLANKETS",
+        "CASKETS",
+        "POSITIONING AID COVERS",
+        "MEMORY BOXES",
+        "DIAPER SHIRTS",
+        "LEG WARMERS",
+      ].map(row => {
         return (
           <Col md={4}>
             <Card

@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Container, Jumbotron } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 import { css } from "@emotion/core"
 
 const Hero = () => (

@@ -1,16 +1,8 @@
 import React from "react"
-import {
-  Carousel,
-  Form,
-  Button,
-  Container,
-  Row,
-  Col,
-  Image,
-} from "react-bootstrap"
+import { Form, Button, Container, Row, Col, Image } from "react-bootstrap"
 import InputMask from "react-input-mask"
-import contactImage from "../images/contact.jpg"
-import "../contact.css"
+import contactImage from "../../images/contact.jpg"
+import "./contact.css"
 
 class ContactUsForm extends React.Component {
   constructor(props) {
