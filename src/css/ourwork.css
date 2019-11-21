@@ -38,7 +38,7 @@
   width: 100%;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 575.98px) {
   .thumbs {
     min-height: 300px;
   }
@@ -70,5 +70,15 @@
 
   .items {
     padding-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  #mobile-title {
+    display: block;
+  }
+
+  #desktop-title {
+    display: none;
   }
 }
