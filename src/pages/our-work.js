@@ -2,12 +2,12 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import OurWorkLayout from "../components/ourWorkLayout"
+import OurWorkStaticQuery from "../components/OurWorkStaticQuery"
 
 const OurWork = () => (
   <Layout>
     <SEO title="Our Work" />
-    <OurWorkLayout />
+    <OurWorkStaticQuery />
   </Layout>
 )
 
