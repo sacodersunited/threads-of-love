@@ -47,6 +47,7 @@ const Calendar = () => (
     <SEO title="Calendar for Threads of Love" />
     <Container>
       <h1>Calendar of Events</h1>
+      {/* FSP@sacoders: maybe we can order by date */}
       {data.map(event => (
         <>
           <Row className="mb-5 mt-5">
@@ -62,8 +63,8 @@ const Calendar = () => (
             <Col>
               <p className="text-muted">{event.description}</p>
             </Col>
-            <hr />
           </Row>
+          <hr />
         </>
       ))}
     </Container>
