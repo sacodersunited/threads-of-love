@@ -35,7 +35,7 @@ const Hero = () => (
         `}
       >
         <h1 className="hero-title">Threads of Love</h1>
-        <h1>For Heavan&apos;s Sake</h1>
+        <h1>For Heaven&apos;s Sake</h1>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi
           aliquid sequi libero odit.
