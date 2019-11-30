@@ -15,7 +15,7 @@ const WorkItems = () => (
       "LEG WARMERS",
     ].map(row => {
       return (
-        <Col md={4}>
+        <Col md={4} key={`tol${row}`}>
           <Card
             style={{
               padding: "10px",
