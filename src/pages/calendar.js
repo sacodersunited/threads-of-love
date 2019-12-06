@@ -47,6 +47,14 @@ const Calendar = () => (
     <SEO title="Calendar for Threads of Love" />
     <Container>
       <h1>Calendar of Events</h1>
+      <Col md={7}>
+        <p className="lead">
+          TOL For Heaven's Sake at Community Bible Church (CBC) meet the 2nd and
+          4th Monday of the month at 9:30 am until 2:30 pm in room 221A at CBC's
+          Administration and Education building. At 1:00 pm we break for lunch,
+          devotions, prayer, and discuss any Threads of Love business.
+        </p>
+      </Col>
       {/* FSP@sacoders: maybe we can order by date */}
       {data.map(event => (
         <>

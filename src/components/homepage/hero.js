@@ -37,8 +37,9 @@ const Hero = () => (
         <h1 className="hero-title">Threads of Love</h1>
         <h1>For Heaven&apos;s Sake</h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi
-          aliquid sequi libero odit.
+          We are a Christian faith based nationally known organization dedicated
+          to the production and distribution of clothing and care items for
+          premature babies.
         </p>
         <Link to="/donate" className="btn btn-primary">
           Donate Now
