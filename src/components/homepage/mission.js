@@ -11,8 +11,15 @@ const Mission = () => (
   >
     <Col md={6}>
       <h2 className="text-uppercase h4">Our Mission and Ministry</h2>
-      <p className="display-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit
+      <p className="lead font-weight-light">
+        Our mission is to provide necessary clothing and aid to premature babies
+        in hospitals and burial items to families whose baby was unable to
+        survive the premature birth.
+      </p>
+      <p>
+        Our ministry is not only to the infant but also to family members. We
+        pray to reach them during their pain, fears, or stress may be too
+        difficult to endure.
       </p>
     </Col>
   </Container>

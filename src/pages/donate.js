@@ -8,8 +8,21 @@ const Donate = () => (
     <SEO title="Get Involved with Threads of Love" />
     <h1>Donate Now</h1>
     <Container className="mb-5 mt-5">
-      <Image src="https://picsum.photos/id/179/800/400" className="mb-3" />
+      <Image
+        src="https://picsum.photos/id/179/800/400"
+        className="mb-3"
+        fluid
+      />
       <Col md={7}>
+        <blockquote class="blockquote">
+          <p className="mt-0 text-italic">
+            For even the Son of Man did not come to be served, but to serve as a
+            ransom for many.
+          </p>
+          <footer class="blockquote-footer">
+            <cite title="Source Title">Mark 10:45</cite>
+          </footer>
+        </blockquote>
         <p className="lead">
           As with any volunteer ministry, we can always use more hands and
           donations. All items are made by volunteers. Materials and labor are
