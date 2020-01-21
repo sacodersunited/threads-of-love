@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Container } from "react-bootstrap"
-import Header from "./header"
+import { Header } from "./header"
 import Footer from "./footer"
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
