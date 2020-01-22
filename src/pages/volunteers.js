@@ -53,7 +53,7 @@ const Volunteers = () => (
   <Layout>
     <SEO title="Volunteers" />
     <Container>
-      <h1>Our Volunteers</h1>
+      <h1>Founding Members</h1>
       <Row className="mt-5 mb-5">
         {data.map(user => (
           <Col className="mb-3">

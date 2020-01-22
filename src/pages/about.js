@@ -16,15 +16,24 @@ const About = () => (
     <SEO title="About Threads Of Love" />
     <Container>
       <h1>About Us </h1>
+      <iframe
+        src="https://omny.fm/shows/project-one/project-one-threads-of-love-9-22-18/embed"
+        width="100%"
+        height="180px"
+        frameborder="0"
+      ></iframe>
     </Container>
     <Row className="mt-5 mb-5">
       <Col md={6} className="mt-5 mb-5">
-        <Image src="https://picsum.photos/id/10/600/300" fluid />
+        <Image
+          src="https://res.cloudinary.com/azrael/image/upload/c_scale,w_800/v1573314519/cbcTOL/IMG_2749_qfut5k.jpg"
+          fluid
+        />
       </Col>
       <Col md={6} className="mt-5 mb-5">
         <h2>Who We Are</h2>
         <p>
-          Threads of Love ( TOL) is a Christian faith based nationally known
+          Threads of Love (TOL) is a Christian faith based nationally known
           organization, dedicated to the production and distribution of clothing
           amd care items for premature babies(living and deceased). Threads of
           Love For Heaven's Sake at Community Bible Church (CBC) is an outreach
@@ -65,7 +74,7 @@ const About = () => (
         </ul>
         <p>
           We also design and provide Internment Gowns and Blankets that are
-          affectionally called Banquet Gowns or Angel Gowns, used for burial of
+          affectionately called Banquet Gowns or Angel Gowns, used for burial of
           premature babies that do not survive their early birth. Grieving
           parents or another family member is given a Memory Box. Memory Boxes
           contain items that help remind parents their tiny baby is being rocked
