@@ -63,14 +63,12 @@ const About = () => (
         </p>
 
         <ul>
-          <li>St. Luke's Baptist Hospitals</li>
-          <li>Stone Oak Methodist Hospital</li>
-          <li>Santa Rosa Children's Hospital</li>
-          <li>Driscoll Children's Hospital</li>
-          <li>
-            Birthing Centers in other countries though a mission's program,
-            Eden's Song Ministry
-          </li>
+          <li>St. Luke's Baptist Hospital</li>
+          <li>Christus Santa Rosa West Over Hills</li>
+          <li>Christus Santa Rosa New Braunfels</li>
+          <li>Methodist Stone Oak Hospital</li>
+          <li>Driscoll Children's Hospital - Corpus Christi, Texas</li>
+          <li>Eden's Song Ministry - Lewiston, Idaho</li>
         </ul>
         <p>
           We also design and provide Internment Gowns and Blankets that are
