@@ -132,7 +132,7 @@ class ContactUsForm extends React.Component {
           <Col md={6}>
             <Image
               id="contact-image"
-              src={contactImage}
+              src="https://res.cloudinary.com/azrael/image/upload/c_scale,h_600,w_600/v1573686135/IMG_8542_megu3l.jpg"
               //   style={{ minHeight: "500px", width: "100%" }}
             ></Image>
           </Col>

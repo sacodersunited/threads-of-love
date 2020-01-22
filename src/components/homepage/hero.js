@@ -17,7 +17,7 @@ const Hero = () => (
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)
           ),
-          url("https://picsum.photos/1440/800");
+          url("https://res.cloudinary.com/azrael/image/upload/c_scale,q_auto:best,w_1440/v1579662063/nyana-stoica-ikGJw9SYUuM-unsplash_iygdbp.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

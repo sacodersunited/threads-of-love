@@ -28,6 +28,7 @@ const About = () => (
         <Image
           src="https://res.cloudinary.com/azrael/image/upload/c_scale,w_800/v1573314519/cbcTOL/IMG_2749_qfut5k.jpg"
           fluid
+          thumbnail
         />
       </Col>
       <Col md={6} className="mt-5 mb-5">
@@ -81,11 +82,19 @@ const About = () => (
         </p>
       </Col>
       <Col md={6} className="mt-5 mb-5">
-        <Image src="https://picsum.photos/id/1001/600/300" fluid />
+        <Image
+          src="https://res.cloudinary.com/azrael/image/upload/c_scale,w_800/v1573686139/IMG_8555_cyagdo.jpg"
+          fluid
+          thumbnail
+        />
       </Col>
 
       <Col md={6} className="mt-5 mb-5">
-        <Image src="https://picsum.photos/id/1010/600/300" fluid />
+        <Image
+          src="https://res.cloudinary.com/azrael/image/upload/c_scale,w_800/v1573314518/cbcTOL/IMG_2736_bpwevr.jpg"
+          fluid
+          thumbnail
+        />
       </Col>
       <Col md={6} className="mt-5 mb-5">
         <h2>Our Mission and Ministry</h2>
@@ -131,11 +140,19 @@ const About = () => (
         </ButtonToolbar>
       </Col>
       <Col md={6} className="mt-5 mb-5">
-        <Image src="https://picsum.photos/id/1066/600/300" fluid />
+        <Image
+          src="https://res.cloudinary.com/azrael/image/upload/c_scale,w_800/v1573686140/members/IMG_8561_bfyavi.jpg"
+          fluid
+          thumbnail
+        />
       </Col>
 
       <Col md={6} className="mt-5 mb-5">
-        <Image src="https://picsum.photos/id/312/600/300" fluid />
+        <Image
+          src="https://res.cloudinary.com/azrael/image/upload/c_scale,w_800/v1573686134/IMG_8533_c4qvg4.jpg"
+          fluid
+          thumbnail
+        />
       </Col>
       <Col md={6} className="mt-5 mb-5">
         <h2>What are the Primary Needs of the Ministry?</h2>
@@ -145,7 +162,7 @@ const About = () => (
           donated by members and friends who are part of the Threads of Love
           ministry. Threads of Love for Heaven's Sake at Community Bible Church
           is a 501(c)3 tax deferred charity organization. We accept funds and
-          provide receipts to donors for their tax records.
+          provide receipts to donors for their tax records upon request.
         </p>
       </Col>
     </Row>
