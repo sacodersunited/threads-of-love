@@ -9,7 +9,8 @@ const data = [
     date: "21 DEC 2019",
     time: "7:00PM",
     location: "Community Bible Church",
-    imageSrc: "https://picsum.photos/id/158/600/400",
+    imageSrc:
+      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero error vitae id quas. Beatae quisquam magnam at voluptatem eos quasi, ab tempora incidunt recusandae, sunt quis perspiciatis expedita! Rerum, tempora?",
   },
@@ -18,7 +19,8 @@ const data = [
     date: "15 DEC 2019",
     time: "7:00PM",
     location: "Community Bible Church",
-    imageSrc: "https://picsum.photos/id/158/600/400",
+    imageSrc:
+      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero error vitae id quas. Beatae quisquam magnam at voluptatem eos quasi, ab tempora incidunt recusandae, sunt quis perspiciatis expedita! Rerum, tempora?",
   },
@@ -27,7 +29,8 @@ const data = [
     date: "21 NOV 2019",
     time: "7:00PM",
     location: "Community Bible Church",
-    imageSrc: "https://picsum.photos/id/158/600/400",
+    imageSrc:
+      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero error vitae id quas. Beatae quisquam magnam at voluptatem eos quasi, ab tempora incidunt recusandae, sunt quis perspiciatis expedita! Rerum, tempora?",
   },
@@ -36,7 +39,8 @@ const data = [
     date: "18 NOV 2019",
     time: "7:00PM",
     location: "Community Bible Church",
-    imageSrc: "https://picsum.photos/id/158/600/400",
+    imageSrc:
+      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero error vitae id quas. Beatae quisquam magnam at voluptatem eos quasi, ab tempora incidunt recusandae, sunt quis perspiciatis expedita! Rerum, tempora?",
   },
