@@ -20,8 +20,9 @@ const About = () => (
         src="https://omny.fm/shows/project-one/project-one-threads-of-love-9-22-18/embed"
         width="100%"
         height="180px"
-        frameborder="0"
-      ></iframe>
+        frameBorder="0"
+        title="threads of love radio spot"
+      />
     </Container>
     <Row className="mt-5 mb-5">
       <Col md={6} className="mt-5 mb-5">
