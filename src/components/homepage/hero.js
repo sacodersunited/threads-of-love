@@ -17,7 +17,7 @@ const Hero = () => (
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)
           ),
-          url("https://res.cloudinary.com/azrael/image/upload/c_scale,q_auto:best,w_1440/v1579662063/nyana-stoica-ikGJw9SYUuM-unsplash_iygdbp.jpg");
+          url("https://res.cloudinary.com/azrael/image/upload/c_scale,q_auto:best,w_1440/v1579986774/gabby-orcutt-crbxjQ4xisQ-unsplash_pdbzlb.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -37,9 +37,8 @@ const Hero = () => (
         <h1 className="hero-title">Threads of Love</h1>
         <h1>For Heaven&apos;s Sake</h1>
         <p>
-          We are a Christian faith based nationally known organization dedicated
-          to the production and distribution of clothing and care items for
-          premature babies.
+          Who knew that such small feet could leave such leave such big imprints
+          on your hearts.
         </p>
         <Link to="/donate" className="btn btn-primary">
           Donate Now

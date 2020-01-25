@@ -12,7 +12,7 @@ export const VolunteerPage = ({ boardMembers, images }) => (
             <Card.Img variant="top" src={user.imgSrc} />
             <Card.Body
               css={css`
-                min-height: 130px;
+                min-height: 140px;
               `}
             >
               <Card.Title>{user.name}</Card.Title>

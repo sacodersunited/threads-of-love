@@ -142,7 +142,7 @@ const About = () => (
       </Col>
       <Col md={6} className="mt-5 mb-5">
         <Image
-          src="https://res.cloudinary.com/azrael/image/upload/c_scale,w_800/v1573686140/members/IMG_8561_bfyavi.jpg"
+          src="https://res.cloudinary.com/azrael/image/upload/c_scale,w_800/v1573686140/volunteers/IMG_8561_bfyavi.jpg"
           fluid
           thumbnail
         />
