@@ -25,11 +25,7 @@ const LayoutHomepage = ({ children }) => {
   `)
 
   return (
-    <div
-      css={css`
-        overflow-x: hidden;
-      `}
-    >
+    <div>
       <Header siteTitle={data.site.siteMetadata.title} homepage={true} />
       {children}
       <Footer />
