@@ -39,11 +39,11 @@ class OurWorkPage extends React.Component {
   }
 
   render() {
-    const newImages = this.props.images.map(imageUrl =>
+    const newImages = this.props.images.other.edges.map(imageUrl =>
       imageUrl.node.secure_url.replace("upload/", "upload/w_200,h_200,c_scale/")
     )
 
-    const bottomImages = this.props.images.map(imageUrl =>
+    const bottomImages = this.props.images.other.edges.map(imageUrl =>
       imageUrl.node.secure_url.replace("upload/", "upload/w_340,c_scale/")
     )
     console.log("this.props", this.props)
@@ -80,7 +80,7 @@ class OurWorkPage extends React.Component {
           <Col md={6}>
             <Card id="maincard" style={{ minHeight: "550px" }}>
               <Image
-                src={this.props.images[0].node.secure_url.replace(
+                src={this.props.images.other.edges[0].node.secure_url.replace(
                   "upload/",
                   "upload/w_500,h_550,c_scale/"
                 )}
@@ -90,56 +90,14 @@ class OurWorkPage extends React.Component {
             </Card>
           </Col>
           <Col md={6}>
-            <Row className="align-items-center justify-content-center mx-auto items">
-              <Col md={3}>
-                <Card>
-                  <Card.Img src={newImages[0]} className="thumbs" />
-                </Card>
-              </Col>
-              <Col md={3}>
-                <Card>
-                  <Card.Img src={newImages[1]} className="thumbs" />
-                </Card>
-              </Col>
-              <Col md={3}>
-                <Card>
-                  <Card.Img src={newImages[2]} className="thumbs" />
-                </Card>
-              </Col>
-            </Row>
-            <Row className="align-items-center justify-content-center mx-auto items">
-              <Col md={3}>
-                <Card>
-                  <Card.Img src={newImages[3]} className="thumbs" />
-                </Card>
-              </Col>
-              <Col md={3}>
-                <Card>
-                  <Card.Img src={newImages[4]} className="thumbs" />
-                </Card>
-              </Col>
-              <Col md={3}>
-                <Card>
-                  <Card.Img src={newImages[5]} className="thumbs" />
-                </Card>
-              </Col>
-            </Row>
-            <Row className="align-items-center justify-content-center mx-auto items">
-              <Col md={3}>
-                <Card>
-                  <Card.Img src={newImages[6]} className="thumbs" />
-                </Card>
-              </Col>
-              <Col md={3}>
-                <Card>
-                  <Card.Img src={newImages[7]} className="thumbs" />
-                </Card>
-              </Col>
-              <Col md={3}>
-                <Card>
-                  <Card.Img src={newImages[8]} className="thumbs" />
-                </Card>
-              </Col>
+            <Row>
+              {newImages.map((image, index) => (
+                <Col md={4} key={index}>
+                  <Card>
+                    <Card.Img src={image} className="thumbs" />
+                  </Card>
+                </Col>
+              ))}
             </Row>
           </Col>
         </Row>

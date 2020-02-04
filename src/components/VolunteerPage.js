@@ -34,7 +34,7 @@ export const VolunteerPage = ({ boardMembers, images }) => (
           <Image
             src={image.node.secure_url.replace(
               "upload/",
-              "upload/c_scale,w_800,h_640/"
+              "upload/c_thumb,g_faces,w_400,h_300/"
             )}
             alt="image.id"
             thumbnail
