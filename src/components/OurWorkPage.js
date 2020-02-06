@@ -116,14 +116,102 @@ class OurWorkPage extends React.Component {
           <Col md={6}>
             <Card id="maincard" style={{ minHeight: "550px" }}>
               {/* TODO: Change based on selected image */}
-              <Image
-                src={this.props.images.other.edges[0].node.secure_url.replace(
-                  "upload/",
-                  "upload/w_500,h_550,c_scale/"
-                )}
-                className="main-image"
-                style={{ maxHeight: "550px" }}
-              />
+
+              {this.state.selected === "OUR WORK" && (
+                <Image
+                  src={this.props.images.other.edges[0].node.secure_url.replace(
+                    "upload/",
+                    "upload/w_500,h_550,c_scale/"
+                  )}
+                  className="main-image"
+                  style={{ maxHeight: "550px" }}
+                />
+              )}
+
+              {this.state.selected === "CAPS" && (
+                <Image
+                  src={this.props.images.caps.edges[0].node.secure_url.replace(
+                    "upload/",
+                    "upload/w_500,h_550,c_scale/"
+                  )}
+                  className="main-image"
+                  style={{ maxHeight: "550px" }}
+                />
+              )}
+
+              {this.state.selected === "BOOTIES" && (
+                <Image
+                  src={this.props.images.booties.edges[0].node.secure_url.replace(
+                    "upload/",
+                    "upload/w_500,h_550,c_scale/"
+                  )}
+                  className="main-image"
+                  style={{ maxHeight: "550px" }}
+                />
+              )}
+
+              {this.state.selected === "QUILTS & BLANKETS" && (
+                <Image
+                  src={this.props.images.quilts.edges[0].node.secure_url.replace(
+                    "upload/",
+                    "upload/w_500,h_550,c_scale/"
+                  )}
+                  className="main-image"
+                  style={{ maxHeight: "550px" }}
+                />
+              )}
+
+              {this.state.selected === "CASKETS" && (
+                <Image
+                  src={this.props.images.caskets.edges[0].node.secure_url.replace(
+                    "upload/",
+                    "upload/w_500,h_550,c_scale/"
+                  )}
+                  className="main-image"
+                  style={{ maxHeight: "550px" }}
+                />
+              )}
+
+              {this.state.selected === "POSITIONING AID COVERS" && (
+                <Image
+                  src={this.props.images.positions.edges[0].node.secure_url.replace(
+                    "upload/",
+                    "upload/w_500,h_550,c_scale/"
+                  )}
+                  className="main-image"
+                  style={{ maxHeight: "550px" }}
+                />
+              )}
+              {this.state.selected === "MEMORY BOXES" && (
+                <Image
+                  src={this.props.images.memoryBoxes.edges[0].node.secure_url.replace(
+                    "upload/",
+                    "upload/w_500,h_550,c_scale/"
+                  )}
+                  className="main-image"
+                  style={{ maxHeight: "550px" }}
+                />
+              )}
+              {this.state.selected === "DIAPER SHIRTS" && (
+                <Image
+                  src={this.props.images.diaperShirts.edges[0].node.secure_url.replace(
+                    "upload/",
+                    "upload/w_500,h_550,c_scale/"
+                  )}
+                  className="main-image"
+                  style={{ maxHeight: "550px" }}
+                />
+              )}
+              {this.state.selected === "LEG WARMERS" && (
+                <Image
+                  src={this.props.images.legWarmers.edges[0].node.secure_url.replace(
+                    "upload/",
+                    "upload/w_500,h_550,c_scale/"
+                  )}
+                  className="main-image"
+                  style={{ maxHeight: "550px" }}
+                />
+              )}
             </Card>
           </Col>
           <Col md={6}>
