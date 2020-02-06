@@ -20,7 +20,7 @@ class OurWorkPage extends React.Component {
     super(props)
 
     this.state = {
-      selected: "Our Work",
+      selected: "OUR WORK",
       mobileSelectIndex: 0,
     }
 
@@ -39,7 +39,43 @@ class OurWorkPage extends React.Component {
   }
 
   render() {
-    const newImages = this.props.images.other.edges.map(imageUrl =>
+    const ourWorkImages = this.props.images.other.edges.map(imageUrl =>
+      imageUrl.node.secure_url.replace("upload/", "upload/w_200,h_200,c_scale/")
+    )
+
+    const capsImages = this.props.images.caps.edges.map(imageUrl =>
+      imageUrl.node.secure_url.replace("upload/", "upload/w_200,h_200,c_scale/")
+    )
+
+    const bootiesImages = this.props.images.booties.edges.map(imageUrl =>
+      imageUrl.node.secure_url.replace("upload/", "upload/w_200,h_200,c_scale/")
+    )
+
+    const quiltImages = this.props.images.quilts.edges.map(imageUrl =>
+      imageUrl.node.secure_url.replace("upload/", "upload/w_200,h_200,c_scale/")
+    )
+
+    const casketImages = this.props.images.caskets.edges.map(imageUrl =>
+      imageUrl.node.secure_url.replace("upload/", "upload/w_200,h_200,c_scale/")
+    )
+
+    const positionImages = this.props.images.positions.edges.map(imageUrl =>
+      imageUrl.node.secure_url.replace("upload/", "upload/w_200,h_200,c_scale/")
+    )
+
+    const memoryBoxImages = this.props.images.memoryBoxes.edges.map(imageUrl =>
+      imageUrl.node.secure_url.replace("upload/", "upload/w_200,h_200,c_scale/")
+    )
+
+    const diaperShirtImages = this.props.images.diaperShirts.edges.map(
+      imageUrl =>
+        imageUrl.node.secure_url.replace(
+          "upload/",
+          "upload/w_200,h_200,c_scale/"
+        )
+    )
+
+    const legWarmerImages = this.props.images.legWarmers.edges.map(imageUrl =>
       imageUrl.node.secure_url.replace("upload/", "upload/w_200,h_200,c_scale/")
     )
 
@@ -79,6 +115,7 @@ class OurWorkPage extends React.Component {
         >
           <Col md={6}>
             <Card id="maincard" style={{ minHeight: "550px" }}>
+              {/* TODO: Change based on selected image */}
               <Image
                 src={this.props.images.other.edges[0].node.secure_url.replace(
                   "upload/",
@@ -91,13 +128,79 @@ class OurWorkPage extends React.Component {
           </Col>
           <Col md={6}>
             <Row>
-              {newImages.map((image, index) => (
-                <Col md={4} key={index}>
-                  <Card>
-                    <Card.Img src={image} className="thumbs" />
-                  </Card>
-                </Col>
-              ))}
+              {/* TODO: Abstract this part based on selected category*/}
+              {this.state.selected === "OUR WORK" &&
+                ourWorkImages.map((image, index) => (
+                  <Col md={4} key={index}>
+                    <Card>
+                      <Card.Img src={image} className="thumbs" />
+                    </Card>
+                  </Col>
+                ))}
+              {this.state.selected === "CAPS" &&
+                capsImages.map((image, index) => (
+                  <Col md={4} key={index}>
+                    <Card>
+                      <Card.Img src={image} className="thumbs" />
+                    </Card>
+                  </Col>
+                ))}
+              {this.state.selected === "BOOTIES" &&
+                bootiesImages.map((image, index) => (
+                  <Col md={4} key={index}>
+                    <Card>
+                      <Card.Img src={image} className="thumbs" />
+                    </Card>
+                  </Col>
+                ))}
+              {this.state.selected === "QUILTS & BLANKETS" &&
+                quiltImages.map((image, index) => (
+                  <Col md={4} key={index}>
+                    <Card>
+                      <Card.Img src={image} className="thumbs" />
+                    </Card>
+                  </Col>
+                ))}
+              {this.state.selected === "CASKETS" &&
+                casketImages.map((image, index) => (
+                  <Col md={4} key={index}>
+                    <Card>
+                      <Card.Img src={image} className="thumbs" />
+                    </Card>
+                  </Col>
+                ))}
+              {this.state.selected === "POSITIONING AID COVERS" &&
+                positionImages.map((image, index) => (
+                  <Col md={4} key={index}>
+                    <Card>
+                      <Card.Img src={image} className="thumbs" />
+                    </Card>
+                  </Col>
+                ))}
+              {this.state.selected === "MEMORY BOXES" &&
+                memoryBoxImages.map((image, index) => (
+                  <Col md={4} key={index}>
+                    <Card>
+                      <Card.Img src={image} className="thumbs" />
+                    </Card>
+                  </Col>
+                ))}
+              {this.state.selected === "DIAPER SHIRTS" &&
+                diaperShirtImages.map((image, index) => (
+                  <Col md={4} key={index}>
+                    <Card>
+                      <Card.Img src={image} className="thumbs" />
+                    </Card>
+                  </Col>
+                ))}
+              {this.state.selected === "LEG WARMERS" &&
+                legWarmerImages.map((image, index) => (
+                  <Col md={4} key={index}>
+                    <Card>
+                      <Card.Img src={image} className="thumbs" />
+                    </Card>
+                  </Col>
+                ))}
             </Row>
           </Col>
         </Row>
