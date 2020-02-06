@@ -65,12 +65,20 @@ const About = () => (
         </p>
 
         <ul>
-          <li>St. Luke's Baptist Hospital</li>
-          <li>Christus Santa Rosa West Over Hills</li>
-          <li>Christus Santa Rosa New Braunfels</li>
-          <li>Methodist Stone Oak Hospital</li>
-          <li>Driscoll Children's Hospital - Corpus Christi, Texas</li>
-          <li>Eden's Song Ministry - Lewiston, Idaho</li>
+          <li>
+            Christus Santa Rosa Children’s Hospital – Downtown San Antonio TX
+          </li>
+          <li>
+            Christus Santa Rosa – Westover Hills, - Northwest San Antonio, TX
+          </li>
+          <li>Christus Santa Rosa – New Braunfels, TX</li>
+          <li>St. Luke’s Baptist Hospital San Antonio, Tx</li>
+          <li>Methodist Hospital Stone Oak – San Antonio, TX</li>
+          <li>Driscoll Children’s Hospital – Corpus Christi, TX</li>
+          <li>
+            Eden’s Song Ministry – Home based in Lewiston, Idaho - Missionary’s
+            to 60 countries
+          </li>
         </ul>
         <p>
           We also design and provide Internment Gowns and Blankets that are
