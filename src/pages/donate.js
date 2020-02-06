@@ -5,8 +5,8 @@ import { Container, Col, Image, Button } from "react-bootstrap"
 
 const Donate = () => (
   <Layout>
-    <SEO title="Get Involved with Threads of Love" />
-    <h1>Donate Now</h1>
+    <SEO title="Donate to Threads of Love" />
+    <h1>Donate</h1>
     <Container className="mb-5 mt-5">
       <Image
         src="https://res.cloudinary.com/azrael/image/upload/c_scale,w_800/v1573686130/IMG_2758_uycliv.jpg"
