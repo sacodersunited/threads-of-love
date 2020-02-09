@@ -1,32 +1,30 @@
 import React from "react"
 import { Row, Col, Card } from "react-bootstrap"
+import { css } from "@emotion/core"
+import { Link } from "gatsby"
+import { productThumbs } from "../helpers"
 
 const WorkItems = () => (
   <Row className="mb-5">
-    {[
-      "OUR WORK",
-      "CAPS",
-      "BOOTIES",
-      "QUILTS & BLANKETS",
-      "CASKETS",
-      "POSITIONING AID COVERS",
-      "MEMORY BOXES",
-      "DIAPER SHIRTS",
-      "LEG WARMERS",
-    ].map(row => {
+    {productThumbs.map(row => {
       return (
         <Col md={4} key={`tol${row}`}>
-          <Card
-            style={{
-              padding: "10px",
-              minHeight: "250px",
-              marginBottom: "10px",
-            }}
-          >
-            <Card.Body>
-              <Card.Title>{row}</Card.Title>
-            </Card.Body>
-          </Card>
+          <Link to="/our-work">
+            <Card
+              css={css`
+                max-height: 250px;
+                margin-bottom: 10px;
+                cursor: pointer;
+              `}
+            >
+              <Card.Img src={row.imgUrl} className="category" />
+              <Card.ImgOverlay className="d-flex">
+                <Card.Title className="d-flex align-items-center justify-content-center mx-auto h-100 text-dark">
+                  {row.title}
+                </Card.Title>
+              </Card.ImgOverlay>
+            </Card>
+          </Link>
         </Col>
       )
     })}
