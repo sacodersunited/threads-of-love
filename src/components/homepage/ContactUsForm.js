@@ -14,6 +14,7 @@ class ContactUsForm extends React.Component {
         phone: "",
         comments: "",
       },
+      chars_left: 500,
       validated: false,
       isDone: false,
     }
@@ -41,6 +42,9 @@ class ContactUsForm extends React.Component {
         break
       case "Comments":
         contactInfo.comments = e.target.value
+        const charCount = e.target.value.length
+        const charLeft = 500 - charCount
+        this.setState({ chars_left: charLeft })
         break
       default:
         break
@@ -197,10 +201,14 @@ class ContactUsForm extends React.Component {
                 <Form.Control
                   as="textarea"
                   rows="3"
+                  maxLength="500"
                   placeholder="Comments"
                   onChange={e => this.onChangeForm(e)}
                   value={this.state.contactUsForm.comments}
                 />
+                <div style={{ float: "right" }}>
+                  {this.state.chars_left} characters left.
+                </div>
               </Form.Group>
 
               <Button type="submit">Submit</Button>
