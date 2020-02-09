@@ -23,9 +23,11 @@ class OurWorkPage extends React.Component {
     this.state = {
       selected: "OUR WORK",
       mobileSelectIndex: 0,
+      mainImageIndex: 0,
     }
 
     this.handleCategory = this.handleCategory.bind(this)
+    this.changeMainImage = this.changeMainImage.bind(this)
   }
 
   handleCategory(e, cat, indexNum) {
@@ -36,6 +38,13 @@ class OurWorkPage extends React.Component {
     this.setState({
       selected: category,
       mobileSelectIndex: menuIndex,
+      mainImageIndex: 0,
+    })
+  }
+
+  changeMainImage(index) {
+    this.setState({
+      mainImageIndex: index,
     })
   }
 
@@ -116,11 +125,11 @@ class OurWorkPage extends React.Component {
         >
           <Col md={6}>
             <Card id="maincard" style={{ minHeight: "550px" }}>
-              {/* TODO: Change based on selected image */}
-
               {this.state.selected === "OUR WORK" && (
                 <Image
-                  src={this.props.images.other.edges[0].node.secure_url.replace(
+                  src={this.props.images.other.edges[
+                    this.state.mainImageIndex
+                  ].node.secure_url.replace(
                     "upload/",
                     "upload/w_500,h_550,c_scale/"
                   )}
@@ -131,7 +140,9 @@ class OurWorkPage extends React.Component {
 
               {this.state.selected === "CAPS" && (
                 <Image
-                  src={this.props.images.caps.edges[0].node.secure_url.replace(
+                  src={this.props.images.caps.edges[
+                    this.state.mainImageIndex
+                  ].node.secure_url.replace(
                     "upload/",
                     "upload/w_500,h_550,c_scale/"
                   )}
@@ -142,7 +153,9 @@ class OurWorkPage extends React.Component {
 
               {this.state.selected === "BOOTIES" && (
                 <Image
-                  src={this.props.images.booties.edges[0].node.secure_url.replace(
+                  src={this.props.images.booties.edges[
+                    this.state.mainImageIndex
+                  ].node.secure_url.replace(
                     "upload/",
                     "upload/w_500,h_550,c_scale/"
                   )}
@@ -153,7 +166,9 @@ class OurWorkPage extends React.Component {
 
               {this.state.selected === "QUILTS & BLANKETS" && (
                 <Image
-                  src={this.props.images.quilts.edges[0].node.secure_url.replace(
+                  src={this.props.images.quilts.edges[
+                    this.state.mainImageIndex
+                  ].node.secure_url.replace(
                     "upload/",
                     "upload/w_500,h_550,c_scale/"
                   )}
@@ -164,7 +179,9 @@ class OurWorkPage extends React.Component {
 
               {this.state.selected === "CASKETS" && (
                 <Image
-                  src={this.props.images.caskets.edges[0].node.secure_url.replace(
+                  src={this.props.images.caskets.edges[
+                    this.state.mainImageIndex
+                  ].node.secure_url.replace(
                     "upload/",
                     "upload/w_500,h_550,c_scale/"
                   )}
@@ -175,7 +192,9 @@ class OurWorkPage extends React.Component {
 
               {this.state.selected === "POSITIONING AID COVERS" && (
                 <Image
-                  src={this.props.images.positions.edges[0].node.secure_url.replace(
+                  src={this.props.images.positions.edges[
+                    this.state.mainImageIndex
+                  ].node.secure_url.replace(
                     "upload/",
                     "upload/w_500,h_550,c_scale/"
                   )}
@@ -185,7 +204,9 @@ class OurWorkPage extends React.Component {
               )}
               {this.state.selected === "MEMORY BOXES" && (
                 <Image
-                  src={this.props.images.memoryBoxes.edges[0].node.secure_url.replace(
+                  src={this.props.images.memoryBoxes.edges[
+                    this.state.mainImageIndex
+                  ].node.secure_url.replace(
                     "upload/",
                     "upload/w_500,h_550,c_scale/"
                   )}
@@ -195,7 +216,9 @@ class OurWorkPage extends React.Component {
               )}
               {this.state.selected === "DIAPER SHIRTS" && (
                 <Image
-                  src={this.props.images.diaperShirts.edges[0].node.secure_url.replace(
+                  src={this.props.images.diaperShirts.edges[
+                    this.state.mainImageIndex
+                  ].node.secure_url.replace(
                     "upload/",
                     "upload/w_500,h_550,c_scale/"
                   )}
@@ -205,7 +228,9 @@ class OurWorkPage extends React.Component {
               )}
               {this.state.selected === "LEG WARMERS" && (
                 <Image
-                  src={this.props.images.legWarmers.edges[0].node.secure_url.replace(
+                  src={this.props.images.legWarmers.edges[
+                    this.state.mainImageIndex
+                  ].node.secure_url.replace(
                     "upload/",
                     "upload/w_500,h_550,c_scale/"
                   )}
@@ -217,12 +242,15 @@ class OurWorkPage extends React.Component {
           </Col>
           <Col md={6}>
             <Row>
-              {/* TODO: Abstract this part based on selected category*/}
               {this.state.selected === "OUR WORK" &&
                 ourWorkImages.map((image, index) => (
                   <Col md={4} key={index}>
                     <Card>
-                      <Card.Img src={image} className="thumbs" />
+                      <Card.Img
+                        src={image}
+                        className="thumbs"
+                        onMouseEnter={this.changeMainImage.bind(this, index)}
+                      />
                     </Card>
                   </Col>
                 ))}
@@ -230,7 +258,11 @@ class OurWorkPage extends React.Component {
                 capsImages.map((image, index) => (
                   <Col md={4} key={index}>
                     <Card>
-                      <Card.Img src={image} className="thumbs" />
+                      <Card.Img
+                        src={image}
+                        className="thumbs"
+                        onMouseEnter={this.changeMainImage.bind(this, index)}
+                      />
                     </Card>
                   </Col>
                 ))}
@@ -238,7 +270,11 @@ class OurWorkPage extends React.Component {
                 bootiesImages.map((image, index) => (
                   <Col md={4} key={index}>
                     <Card>
-                      <Card.Img src={image} className="thumbs" />
+                      <Card.Img
+                        src={image}
+                        className="thumbs"
+                        onMouseEnter={this.changeMainImage.bind(this, index)}
+                      />
                     </Card>
                   </Col>
                 ))}
@@ -246,7 +282,11 @@ class OurWorkPage extends React.Component {
                 quiltImages.map((image, index) => (
                   <Col md={4} key={index}>
                     <Card>
-                      <Card.Img src={image} className="thumbs" />
+                      <Card.Img
+                        src={image}
+                        className="thumbs"
+                        onMouseEnter={this.changeMainImage.bind(this, index)}
+                      />
                     </Card>
                   </Col>
                 ))}
@@ -254,7 +294,11 @@ class OurWorkPage extends React.Component {
                 casketImages.map((image, index) => (
                   <Col md={4} key={index}>
                     <Card>
-                      <Card.Img src={image} className="thumbs" />
+                      <Card.Img
+                        src={image}
+                        className="thumbs"
+                        onMouseEnter={this.changeMainImage.bind(this, index)}
+                      />
                     </Card>
                   </Col>
                 ))}
@@ -262,7 +306,11 @@ class OurWorkPage extends React.Component {
                 positionImages.map((image, index) => (
                   <Col md={4} key={index}>
                     <Card>
-                      <Card.Img src={image} className="thumbs" />
+                      <Card.Img
+                        src={image}
+                        className="thumbs"
+                        onMouseEnter={this.changeMainImage.bind(this, index)}
+                      />
                     </Card>
                   </Col>
                 ))}
@@ -270,7 +318,11 @@ class OurWorkPage extends React.Component {
                 memoryBoxImages.map((image, index) => (
                   <Col md={4} key={index}>
                     <Card>
-                      <Card.Img src={image} className="thumbs" />
+                      <Card.Img
+                        src={image}
+                        className="thumbs"
+                        onMouseEnter={this.changeMainImage.bind(this, index)}
+                      />
                     </Card>
                   </Col>
                 ))}
@@ -278,7 +330,11 @@ class OurWorkPage extends React.Component {
                 diaperShirtImages.map((image, index) => (
                   <Col md={4} key={index}>
                     <Card>
-                      <Card.Img src={image} className="thumbs" />
+                      <Card.Img
+                        src={image}
+                        className="thumbs"
+                        onMouseEnter={this.changeMainImage.bind(this, index)}
+                      />
                     </Card>
                   </Col>
                 ))}
@@ -286,7 +342,11 @@ class OurWorkPage extends React.Component {
                 legWarmerImages.map((image, index) => (
                   <Col md={4} key={index}>
                     <Card>
-                      <Card.Img src={image} className="thumbs" />
+                      <Card.Img
+                        src={image}
+                        className="thumbs"
+                        onMouseEnter={this.changeMainImage.bind(this, index)}
+                      />
                     </Card>
                   </Col>
                 ))}
