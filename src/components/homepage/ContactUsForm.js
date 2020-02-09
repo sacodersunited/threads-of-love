@@ -1,5 +1,13 @@
 import React from "react"
-import { Form, Button, Container, Row, Col, Image } from "react-bootstrap"
+import {
+  Form,
+  Button,
+  Container,
+  Row,
+  Col,
+  Image,
+  Alert,
+} from "react-bootstrap"
 import InputMask from "react-input-mask"
 import "./contact.css"
 
@@ -170,6 +178,7 @@ class ContactUsForm extends React.Component {
                 <Form.Label>Email</Form.Label>
 
                 <Form.Control
+                  required
                   type="email"
                   placeholder="Email"
                   onChange={e => this.onChangeForm(e)}
@@ -211,7 +220,17 @@ class ContactUsForm extends React.Component {
                 </div>
               </Form.Group>
 
-              <Button type="submit">Submit</Button>
+              <Form.Group controlId="formButton">
+                <Button type="submit">Submit</Button>
+                {this.state.isDone ? (
+                  <Alert
+                    variant="success"
+                    style={{ display: "inline", marginLeft: "15px" }}
+                  >
+                    Form is submitted!
+                  </Alert>
+                ) : null}
+              </Form.Group>
             </Form>
           </Col>
         </Row>
