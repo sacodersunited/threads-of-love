@@ -12,6 +12,7 @@ class ContactUsForm extends React.Component {
         name: "",
         email: "",
         phone: "",
+        comments: "",
       },
       validated: false,
       isDone: false,
@@ -37,6 +38,9 @@ class ContactUsForm extends React.Component {
         break
       case "Phone Number":
         contactInfo.phone = e.target.value
+        break
+      case "Comments":
+        contactInfo.comments = e.target.value
         break
       default:
         break
@@ -89,8 +93,12 @@ class ContactUsForm extends React.Component {
       this.state.contactUsForm.phone
     )}`
 
-    const querystring = `${eName}&${eEmail}&${ePhone}&formGoogleSheetName=responses`
+    let eComments = `${encodeURIComponent("comments")}=${encodeURIComponent(
+      this.state.contactUsForm.comments
+    )}`
 
+    const querystring = `${eName}&${eEmail}&${ePhone}&${eComments}&formGoogleSheetName=responses`
+    console.log("querySTring", querystring)
     fetch(
       "https://script.google.com/macros/s/AKfycbzDuxNglZMjY0LJhHH0kBS6Wtkg9uquHA5AXgf_w1oQQg0zpUyf/exec?" +
         querystring,
@@ -112,6 +120,7 @@ class ContactUsForm extends React.Component {
           name: "",
           email: "",
           phone: "",
+          comments: "",
         },
       })
 
@@ -132,11 +141,9 @@ class ContactUsForm extends React.Component {
             <Image
               id="contact-image"
               src="https://res.cloudinary.com/azrael/image/upload/c_scale,h_600,w_600/v1573686135/IMG_8542_megu3l.jpg"
-              //   style={{ minHeight: "500px", width: "100%" }}
             ></Image>
           </Col>
           <Col md={6}>
-            {/* <Carousel.Caption style={{ color: "black", textAlign: "left" }}> */}
             <Form
               validated={this.state.validated}
               onSubmit={e => this.handleSubmit(e)}
@@ -185,10 +192,19 @@ class ContactUsForm extends React.Component {
                   )}
                 </InputMask>
               </Form.Group>
+              <Form.Group controlId="formComments">
+                <Form.Label>Comments</Form.Label>
+                <Form.Control
+                  as="textarea"
+                  rows="3"
+                  placeholder="Comments"
+                  onChange={e => this.onChangeForm(e)}
+                  value={this.state.contactUsForm.comments}
+                />
+              </Form.Group>
 
               <Button type="submit">Submit</Button>
             </Form>
-            {/* </Carousel.Caption> */}
           </Col>
         </Row>
       </Container>
