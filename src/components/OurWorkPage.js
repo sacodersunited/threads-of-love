@@ -2,6 +2,7 @@ import React from "react"
 import { Container, Row, Col, Card, Image } from "react-bootstrap"
 import { css } from "@emotion/core"
 import "../css/ourwork.css"
+import { productThumbs } from "./helpers"
 
 const categories = [
   "OUR WORK",
@@ -293,7 +294,7 @@ class OurWorkPage extends React.Component {
           </Col>
         </Row>
         <Row id="category-row">
-          {["OUR WORK", "CAPS", "BOOTIES"].map((row, index) => {
+          {productThumbs.map((row, index) => {
             return (
               <Col md={4} key={`${row}${index}`}>
                 <Card
@@ -304,72 +305,19 @@ class OurWorkPage extends React.Component {
                   `}
                 >
                   <Card.Img
-                    src={bottomImages[index + 1]}
-                    onClick={e => this.handleCategory(e, row)}
+                    src={row.imgUrl}
+                    onClick={e => this.handleCategory(e, row.title)}
                     className="category"
                   />
                   <Card.ImgOverlay className="d-flex">
                     <Card.Title className="d-flex align-items-center justify-content-center mx-auto h-100">
-                      {row}
+                      {row.title}
                     </Card.Title>
                   </Card.ImgOverlay>
                 </Card>
               </Col>
             )
           })}
-
-          {["QUILTS & BLANKETS", "CASKETS", "POSITIONING AID COVERS"].map(
-            (row, index) => {
-              return (
-                <Col md={4} key={`${row}${index}`}>
-                  <Card
-                    css={css`
-                      max-height: 250px;
-                      margin-bottom: 10px;
-                      cursor: pointer;
-                    `}
-                  >
-                    <Card.Img
-                      src={bottomImages[index]}
-                      className="category"
-                      onClick={e => this.handleCategory(e, row)}
-                    />
-                    <Card.ImgOverlay className="d-flex">
-                      <Card.Title className="d-flex align-items-center justify-content-center mx-auto h-100">
-                        {row}
-                      </Card.Title>
-                    </Card.ImgOverlay>
-                  </Card>
-                </Col>
-              )
-            }
-          )}
-          {["MEMORY BOXES", "DIAPER SHIRTS", "LEG WARMERS"].map(
-            (row, index) => {
-              return (
-                <Col md={4} key={`${row}${index}`}>
-                  <Card
-                    css={css`
-                      max-height: 250px;
-                      margin-bottom: 10px;
-                      cursor: pointer;
-                    `}
-                  >
-                    <Card.Img
-                      src={bottomImages[index + 6]}
-                      className="category"
-                      onClick={e => this.handleCategory(e, row)}
-                    />
-                    <Card.ImgOverlay className="d-flex">
-                      <Card.Title className="d-flex align-items-center justify-content-center mx-auto h-100">
-                        {row}
-                      </Card.Title>
-                    </Card.ImgOverlay>
-                  </Card>
-                </Col>
-              )
-            }
-          )}
         </Row>
       </Container>
     )
