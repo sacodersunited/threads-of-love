@@ -3,8 +3,7 @@ import { Jumbotron, Container, Col, Row } from "react-bootstrap"
 import CountUp from "react-countup"
 import VisibilitySensor from "react-visibility-sensor"
 import TextLoop from "react-text-loop"
-import { FaRegLifeRing, FaHospital } from "react-icons"
-// import { IoMdPerson } from "react-icons/md"
+import { FaBaby, FaHospital } from "react-icons/fa"
 
 class Donations extends Component {
   state = {
@@ -89,7 +88,7 @@ class Donations extends Component {
             <Col md={6}>
               <div style={{ textAlign: "center" }}>
                 <div style={{ color: "white", display: "inline" }}>
-                  <FaRegLifeRing size={100} style={{ padding: "5px" }} />
+                  <FaBaby size={100} style={{ padding: "5px" }} />
                 </div>
                 <VisibilitySensor
                   onChange={this.onVisibilityChange}
@@ -128,9 +127,6 @@ class Donations extends Component {
                 </span>
               </div>
             </Col>
-            {/* <Col md={6}> */}
-            {/* <IoMdPerson size={100} style={{ padding: "5px" }}></IoMdPerson> */}
-            {/* </Col> */}
           </Row>
         </Container>
       </Jumbotron>
