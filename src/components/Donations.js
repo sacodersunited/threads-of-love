@@ -2,7 +2,9 @@ import React, { Component } from "react"
 import { Jumbotron, Container, Col, Row } from "react-bootstrap"
 import CountUp from "react-countup"
 import VisibilitySensor from "react-visibility-sensor"
-import { FaRegLifeRing, FaHospital } from "react-icons/fa"
+import TextLoop from "react-text-loop"
+import { FaRegLifeRing, FaHospital } from "react-icons"
+// import { IoMdPerson } from "react-icons/md"
 
 class Donations extends Component {
   state = {
@@ -34,7 +36,7 @@ class Donations extends Component {
                 >
                   <CountUp
                     delay={2}
-                    end={this.state.didViewCountUp ? 7 : 0}
+                    end={this.state.didViewCountUp ? 6 : 0}
                     size={300}
                     separator=","
                     duration="3"
@@ -50,7 +52,7 @@ class Donations extends Component {
                 </VisibilitySensor>
                 <span
                   style={{
-                    fontSize: "xx-large",
+                    fontSize: "x-large",
                     color: "white",
                     fontWeight: "900px",
                     display: "inline",
@@ -58,8 +60,30 @@ class Donations extends Component {
                     verticalAlign: "middle",
                   }}
                 >
-                  South Texas hospitals
+                  South Texas Hospitals
                 </span>
+              </div>
+              <div
+                style={{
+                  fontSize: "x-large",
+                  color: "white",
+                  fontWeight: "900px",
+                  verticalAlign: "middle",
+                  marginTop: "26px",
+                }}
+              >
+                <TextLoop
+                  springConfig={{ stiffness: 70, damping: 31 }}
+                  adjustingSpeed={500}
+                  children={[
+                    "Christus Santa Rosa Children’s Hospital – downtown SATX",
+                    "Christus Santa Rosa – Westover Hills SATX",
+                    "Christus Santa Rosa – New Braunfels TX",
+                    "St. Luke’s Baptist - SATX",
+                    "Methodist Hospital – Stone Oak, SATX",
+                    "Driscoll Children’s Hospital – Corpus Christi TX",
+                  ]}
+                ></TextLoop>
               </div>
             </Col>
             <Col md={6}>
@@ -76,7 +100,7 @@ class Donations extends Component {
                 >
                   <CountUp
                     delay={2}
-                    end={this.state.didViewCountUp ? 2568 : 0}
+                    end={this.state.didViewCountUp ? 4698 : 0}
                     size={300}
                     separator=","
                     duration="5"
@@ -104,6 +128,9 @@ class Donations extends Component {
                 </span>
               </div>
             </Col>
+            {/* <Col md={6}> */}
+            {/* <IoMdPerson size={100} style={{ padding: "5px" }}></IoMdPerson> */}
+            {/* </Col> */}
           </Row>
         </Container>
       </Jumbotron>
