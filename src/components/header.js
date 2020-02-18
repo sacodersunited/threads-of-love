@@ -13,10 +13,11 @@ export const Header = ({ siteTitle, homepage }) => {
     } else {
       setHeaderShow(false)
     }
+    return () => window.removeEventListener("scroll", handleScroll)
   }
   useEffect(() => {
     window.addEventListener("scroll", handleScroll)
-  })
+  }, [window.scrollY])
 
   return homepage ? (
     <Navbar
