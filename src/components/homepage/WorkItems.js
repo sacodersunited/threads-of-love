@@ -19,7 +19,7 @@ const WorkItems = () => (
             >
               <Card.Img src={row.imgUrl} className="category" />
               <Card.ImgOverlay className="d-flex">
-                <Card.Title className="d-flex align-items-center justify-content-center mx-auto h-100 text-dark">
+                <Card.Title className="d-flex align-items-end justify-content-center mx-auto h-80 text-dark">
                   {row.title}
                 </Card.Title>
               </Card.ImgOverlay>
