@@ -152,10 +152,10 @@ class ContactUsForm extends React.Component {
           <Col md={6}>
             <Image
               id="contact-image"
-              src="https://res.cloudinary.com/azrael/image/upload/c_scale,h_600,w_600/v1573686135/IMG_8542_megu3l.jpg"
+              src="https://res.cloudinary.com/azrael/image/upload/c_thumb,h_400/v1582083615/TOLFHS_BANNER_KOOP_1_a0nixr.jpg"
             ></Image>
           </Col>
-          <Col md={6}>
+          <Col md={6} className="mt-5">
             <Form
               validated={this.state.validated}
               onSubmit={e => this.handleSubmit(e)}
