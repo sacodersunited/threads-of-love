@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Children } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
@@ -10,11 +10,28 @@ import {
   Button,
   ButtonToolbar,
 } from "react-bootstrap"
+import styled from "@emotion/styled"
+
+const RowStyles = styled.div`
+  color: ${props => (props.txtColor ? props.txtColor : "#212529")};
+  background-color: ${props => (props.bkColor ? props.bkColor : "white")};
+  min-height: 35rem;
+  padding: 20px 0;
+`
+
+const RowWrapper = ({ children, bkColor, txtColor }) => (
+  <RowStyles bkColor={bkColor} txtColor={txtColor}>
+    <Container>
+      <Row>{children}</Row>
+    </Container>
+  </RowStyles>
+)
 
 const About = () => (
-  <Layout>
-    <SEO title="About Threads Of Love" />
+  <Layout isFullWidth>
     <Container>
+      <SEO title="About Threads Of Love" />
+
       <h1>About Us </h1>
       <iframe
         src="https://omny.fm/shows/project-one/project-one-threads-of-love-9-22-18/embed"
@@ -24,7 +41,8 @@ const About = () => (
         title="threads of love radio spot"
       />
     </Container>
-    <Row className="mt-5 mb-5">
+
+    <RowWrapper bkColor="rebeccapurple" txtColor="white">
       <Col md={6} className="mt-5 mb-5">
         <Image
           src="https://res.cloudinary.com/azrael/image/upload/c_scale,w_800/v1573314519/cbcTOL/IMG_2749_qfut5k.jpg"
@@ -45,7 +63,9 @@ const About = () => (
           compensation for services.
         </p>
       </Col>
+    </RowWrapper>
 
+    <RowWrapper>
       <Col md={6} className="mt-5 mb-5">
         <h2>What We Do</h2>
         <p>
@@ -97,7 +117,9 @@ const About = () => (
           thumbnail
         />
       </Col>
+    </RowWrapper>
 
+    <RowWrapper bkColor="rebeccapurple" txtColor="white">
       <Col md={6} className="mt-5 mb-5">
         <Image
           src="https://res.cloudinary.com/azrael/image/upload/c_scale,w_800/v1573314518/cbcTOL/IMG_2736_bpwevr.jpg"
@@ -118,7 +140,9 @@ const About = () => (
           may be too difficult to endure.
         </p>
       </Col>
+    </RowWrapper>
 
+    <RowWrapper>
       <Col md={6} className="mt-5 mb-5">
         <h2>How Can You Help?</h2>
         <p>Pray for our Threads of Love for Heaven's Sake.</p>
@@ -155,7 +179,9 @@ const About = () => (
           thumbnail
         />
       </Col>
+    </RowWrapper>
 
+    <RowWrapper bkColor="rebeccapurple" txtColor="white">
       <Col md={6} className="mt-5 mb-5">
         <Image
           src="https://res.cloudinary.com/azrael/image/upload/c_scale,w_800/v1573686134/IMG_8533_c4qvg4.jpg"
@@ -174,7 +200,7 @@ const About = () => (
           provide receipts to donors for their tax records upon request.
         </p>
       </Col>
-    </Row>
+    </RowWrapper>
   </Layout>
 )
 
