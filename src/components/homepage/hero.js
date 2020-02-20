@@ -26,7 +26,7 @@ const Hero = () => (
       <Container
         css={css`
           position: absolute;
-          top: 50%;
+          top: 70%;
           left: 50%;
           width: 400px;
           -webkit-transform: translate(-50%, -50%);
@@ -34,15 +34,12 @@ const Hero = () => (
           color: white;
         `}
       >
-        <h1 className="hero-title">Threads of Love</h1>
-        <h1>For Heaven&apos;s Sake</h1>
-        <p>
-          Who knew that such small feet could leave such leave such big imprints
-          on your hearts.
+        <h1 className="display-1">Threads of Love</h1>
+        <h1>For Heaven's Sake</h1>
+        <p className="lead">
+          Who knew that such small feet could leave such big imprints on your
+          hearts.
         </p>
-        <Link to="/donate" className="btn btn-primary">
-          Donate Now
-        </Link>
       </Container>
     </div>
   </div>

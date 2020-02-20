@@ -38,7 +38,7 @@ const Footer = () => (
         </Col>
         <Col md={4} className="text-white">
           <address>
-            1707 Junction Ridge San Antonio, TX 78248 <br />
+            2477 N Loop 1604 East, San Antonio, TX 78232 <br />
             c/o Linda Coward
           </address>
 

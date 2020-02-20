@@ -6,7 +6,10 @@ const OurWorkStaticQuery = props => (
   <StaticQuery
     query={graphql`
       query ourProducts {
-        other: allCloudinaryMedia(filter: { tags: { eq: "other" } }) {
+        other: allCloudinaryMedia(
+          limit: 15
+          filter: { tags: { eq: "other" } }
+        ) {
           edges {
             node {
               id
@@ -15,7 +18,7 @@ const OurWorkStaticQuery = props => (
             }
           }
         }
-        caps: allCloudinaryMedia(filter: { tags: { eq: "caps" } }) {
+        caps: allCloudinaryMedia(limit: 15, filter: { tags: { eq: "caps" } }) {
           edges {
             node {
               id
@@ -24,7 +27,10 @@ const OurWorkStaticQuery = props => (
             }
           }
         }
-        booties: allCloudinaryMedia(filter: { tags: { eq: "booties" } }) {
+        booties: allCloudinaryMedia(
+          limit: 15
+          filter: { tags: { eq: "booties" } }
+        ) {
           edges {
             node {
               id
@@ -34,6 +40,7 @@ const OurWorkStaticQuery = props => (
           }
         }
         quilts: allCloudinaryMedia(
+          limit: 15
           filter: { tags: { eq: "quilts and blankets" } }
         ) {
           edges {
@@ -44,7 +51,10 @@ const OurWorkStaticQuery = props => (
             }
           }
         }
-        caskets: allCloudinaryMedia(filter: { tags: { eq: "caskets" } }) {
+        caskets: allCloudinaryMedia(
+          limit: 15
+          filter: { tags: { eq: "caskets" } }
+        ) {
           edges {
             node {
               id
@@ -54,6 +64,7 @@ const OurWorkStaticQuery = props => (
           }
         }
         positions: allCloudinaryMedia(
+          limit: 15
           filter: { tags: { eq: "positioning aid" } }
         ) {
           edges {
@@ -65,6 +76,7 @@ const OurWorkStaticQuery = props => (
           }
         }
         memoryBoxes: allCloudinaryMedia(
+          limit: 15
           filter: { tags: { eq: "memory boxes" } }
         ) {
           edges {
@@ -75,7 +87,10 @@ const OurWorkStaticQuery = props => (
             }
           }
         }
-        diaperShirts: allCloudinaryMedia(filter: { tags: { eq: "diaper" } }) {
+        diaperShirts: allCloudinaryMedia(
+          limit: 15
+          filter: { tags: { eq: "diaper" } }
+        ) {
           edges {
             node {
               id
@@ -85,6 +100,7 @@ const OurWorkStaticQuery = props => (
           }
         }
         legWarmers: allCloudinaryMedia(
+          limit: 15
           filter: { tags: { eq: "leg warmers" } }
         ) {
           edges {

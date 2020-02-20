@@ -370,7 +370,7 @@ class OurWorkPage extends React.Component {
                     className="category"
                   />
                   <Card.ImgOverlay className="d-flex">
-                    <Card.Title className="d-flex align-items-center justify-content-center mx-auto h-100">
+                    <Card.Title className="d-flex align-items-end justify-content-center mx-auto h-80">
                       {row.title}
                     </Card.Title>
                   </Card.ImgOverlay>
