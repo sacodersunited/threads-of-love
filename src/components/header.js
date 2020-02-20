@@ -13,10 +13,10 @@ export const Header = ({ siteTitle, homepage }) => {
     } else {
       setHeaderShow(false)
     }
-    return () => window.removeEventListener("scroll", handleScroll)
   }
   useEffect(() => {
     window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
   }, [window.scrollY])
 
   return homepage ? (
