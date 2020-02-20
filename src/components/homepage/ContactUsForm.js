@@ -152,7 +152,7 @@ class ContactUsForm extends React.Component {
           <Col md={6}>
             <Image
               id="contact-image"
-              src="https://res.cloudinary.com/azrael/image/upload/c_thumb,h_400/v1582083615/TOLFHS_BANNER_KOOP_1_a0nixr.jpg"
+              src="https://res.cloudinary.com/azrael/image/upload/v1582083615/TOLFHS_BANNER_KOOP_1_a0nixr.jpg"
             ></Image>
           </Col>
           <Col md={6} className="mt-5">

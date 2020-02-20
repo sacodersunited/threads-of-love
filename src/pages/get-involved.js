@@ -10,7 +10,7 @@ const GetInvolved = () => (
     <h1>Get Involved</h1>
     <Container className="mb-5 mt-5">
       <Image
-        src="https://res.cloudinary.com/azrael/image/upload/c_scale,w_800/v1573686135/IMG_8540_sjeem0.jpg"
+        src="https://res.cloudinary.com/azrael/image/upload/v1580952914/20200123_1552071_fxwc4f.jpg"
         className="mb-3"
       />
       <Col md={7}>
