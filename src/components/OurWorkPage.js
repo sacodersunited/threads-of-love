@@ -7,13 +7,13 @@ import { productThumbs } from "./helpers"
 const categories = [
   "OUR WORK",
   "CAPS",
-  "BOOTIES",
+  "BOOTIES / LEG WARMERS",
   "QUILTS & BLANKETS",
-  "CASKETS",
-  "POSITIONING AID COVERS",
+  "CASKETS / URNS",
+  "POSITIONING AID / Z-FLO COVERS",
   "MEMORY BOXES",
   "DIAPER SHIRTS",
-  "LEG WARMERS",
+  "GOWNS",
 ]
 
 class OurWorkPage extends React.Component {
@@ -85,7 +85,7 @@ class OurWorkPage extends React.Component {
         )
     )
 
-    const legWarmerImages = this.props.images.legWarmers.edges.map(imageUrl =>
+    const gowns = this.props.images.gowns.edges.map(imageUrl =>
       imageUrl.node.secure_url.replace("upload/", "upload/w_200,h_200,c_scale/")
     )
 
@@ -151,7 +151,7 @@ class OurWorkPage extends React.Component {
                 />
               )}
 
-              {this.state.selected === "BOOTIES" && (
+              {this.state.selected === "BOOTIES / LEG WARMERS" && (
                 <Image
                   src={this.props.images.booties.edges[
                     this.state.mainImageIndex
@@ -177,7 +177,7 @@ class OurWorkPage extends React.Component {
                 />
               )}
 
-              {this.state.selected === "CASKETS" && (
+              {this.state.selected === "CASKETS / URNS" && (
                 <Image
                   src={this.props.images.caskets.edges[
                     this.state.mainImageIndex
@@ -190,7 +190,7 @@ class OurWorkPage extends React.Component {
                 />
               )}
 
-              {this.state.selected === "POSITIONING AID COVERS" && (
+              {this.state.selected === "POSITIONING AID / Z-FLO COVERS" && (
                 <Image
                   src={this.props.images.positions.edges[
                     this.state.mainImageIndex
@@ -226,9 +226,9 @@ class OurWorkPage extends React.Component {
                   style={{ maxHeight: "550px" }}
                 />
               )}
-              {this.state.selected === "LEG WARMERS" && (
+              {this.state.selected === "GOWNS" && (
                 <Image
-                  src={this.props.images.legWarmers.edges[
+                  src={this.props.images.gowns.edges[
                     this.state.mainImageIndex
                   ].node.secure_url.replace(
                     "upload/",
@@ -266,7 +266,7 @@ class OurWorkPage extends React.Component {
                     </Card>
                   </Col>
                 ))}
-              {this.state.selected === "BOOTIES" &&
+              {this.state.selected === "BOOTIES / LEG WARMERS" &&
                 bootiesImages.map((image, index) => (
                   <Col md={4} key={index}>
                     <Card>
@@ -290,7 +290,7 @@ class OurWorkPage extends React.Component {
                     </Card>
                   </Col>
                 ))}
-              {this.state.selected === "CASKETS" &&
+              {this.state.selected === "CASKETS / URNS" &&
                 casketImages.map((image, index) => (
                   <Col md={4} key={index}>
                     <Card>
@@ -302,7 +302,7 @@ class OurWorkPage extends React.Component {
                     </Card>
                   </Col>
                 ))}
-              {this.state.selected === "POSITIONING AID COVERS" &&
+              {this.state.selected === "POSITIONING AID / Z-FLO COVERS" &&
                 positionImages.map((image, index) => (
                   <Col md={4} key={index}>
                     <Card>
@@ -338,8 +338,8 @@ class OurWorkPage extends React.Component {
                     </Card>
                   </Col>
                 ))}
-              {this.state.selected === "LEG WARMERS" &&
-                legWarmerImages.map((image, index) => (
+              {this.state.selected === "GOWNS" &&
+                gowns.map((image, index) => (
                   <Col md={4} key={index}>
                     <Card>
                       <Card.Img
