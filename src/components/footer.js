@@ -2,10 +2,18 @@ import React from "react"
 import { Navbar, Container, Col, Row } from "react-bootstrap"
 import { Link } from "gatsby"
 import { FaFacebookF } from "react-icons/fa"
+import { css } from "@emotion/core"
 
 const Footer = () => (
   <>
-    <Navbar bg="primary" variant="dark" className="pt-5 pb-5">
+    <Navbar
+      bg="primary"
+      variant="dark"
+      className="pt-5 pb-5"
+      css={css`
+        background-color: #2f124d !important;
+      `}
+    >
       <Container>
         <Col md={4}>
           <Link to="/">
@@ -48,7 +56,12 @@ const Footer = () => (
         </Col>
       </Container>
     </Navbar>
-    <nav className="navbar navbar-expand navbar-dark bg-primary">
+    <nav
+      className="navbar navbar-expand navbar-dark bg-primary"
+      css={css`
+        background-color: #2f124d !important;
+      `}
+    >
       <a href="https://sacodersunited.com" className="navbar-brand">
         ©sacodersunited
       </a>

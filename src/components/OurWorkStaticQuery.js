@@ -99,9 +99,9 @@ const OurWorkStaticQuery = props => (
             }
           }
         }
-        legWarmers: allCloudinaryMedia(
+        gowns: allCloudinaryMedia(
           limit: 15
-          filter: { tags: { eq: "leg warmers" } }
+          filter: { tags: { eq: "gowns" } }
         ) {
           edges {
             node {

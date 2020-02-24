@@ -9,6 +9,7 @@ import {
   Image,
   Button,
   ButtonToolbar,
+  ResponsiveEmbed,
 } from "react-bootstrap"
 import styled from "@emotion/styled"
 
@@ -44,11 +45,15 @@ const About = () => (
 
     <RowWrapper bkColor="rebeccapurple" txtColor="white">
       <Col md={6} className="mt-5 mb-5">
-        <Image
-          src="https://res.cloudinary.com/azrael/image/upload/c_scale,w_800/v1573314519/cbcTOL/IMG_2749_qfut5k.jpg"
-          fluid
-          thumbnail
-        />
+        <ResponsiveEmbed aspectRatio="16by9">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/YlEbigiN1kI"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </ResponsiveEmbed>
       </Col>
       <Col md={6} className="mt-5 mb-5">
         <h2>Who We Are</h2>

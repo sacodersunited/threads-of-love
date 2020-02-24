@@ -18,7 +18,7 @@ class Donations extends Component {
 
   render() {
     return (
-      <Jumbotron style={{ background: "#007bff" }}>
+      <Jumbotron style={{ background: "rebeccapurple" }}>
         <Container>
           <Row>
             <Col md={6} style={{ margin: "0 auto" }}>
