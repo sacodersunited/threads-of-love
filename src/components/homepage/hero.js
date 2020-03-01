@@ -34,9 +34,33 @@ const Hero = () => (
           color: white;
         `}
       >
-        <h1 className="display-1">Threads of Love</h1>
-        <h1>For Heaven's Sake</h1>
-        <p className="lead">
+        <h1
+          className="display-1"
+          css={css`
+            @media (max-width: 575.98px) {
+              font-size: 32px;
+            }
+          `}
+        >
+          Threads of Love
+        </h1>
+        <h1
+          css={css`
+            @media (max-width: 575.98px) {
+              font-size: 32px;
+            }
+          `}
+        >
+          For Heaven's Sake
+        </h1>
+        <p
+          className="lead"
+          css={css`
+            @media (max-width: 575.98px) {
+              font-size: 16px;
+            }
+          `}
+        >
           Who knew that such small feet could leave such big imprints on your
           hearts.
         </p>
