@@ -13,6 +13,7 @@
     "gatsby-image": "^2.2.30",
     "gatsby-plugin-config": "^1.0.7",
     "gatsby-plugin-emotion": "^4.1.14",
+    "gatsby-plugin-google-analytics": "^2.1.36",
     "gatsby-plugin-manifest": "^2.2.25",
     "gatsby-plugin-netlify-cache": "^1.2.0",
     "gatsby-plugin-offline": "^3.0.17",
