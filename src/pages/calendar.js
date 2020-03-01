@@ -7,6 +7,16 @@ import CalendarDoc from "../docs/TOL 2020 CALENDAR JPG FILE.jpg"
 
 const data = [
   {
+    title: "TOL February Meeting",
+    date: "28 FEB 2020",
+    time: "9:30AM",
+    location: "Community Bible Church",
+    imageSrc:
+      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
+    description:
+      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:00 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+  },
+  {
     title: "TOL March Meeting",
     date: "9 MAR 2020",
     time: "9:30AM",
@@ -46,6 +56,7 @@ const data = [
     description:
       "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:00 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
   },
+
   {
     title: "TOL May Meeting",
     date: "4 MAY 2020",
@@ -197,6 +208,16 @@ const data = [
       "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:00 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
   },
 ]
+const Today = new Date()
+const Events = data.filter(event => {
+  console.log("event data", event)
+  let eventDate = new Date(event.date)
+  if (Today < eventDate) {
+    return event
+  }
+
+  return null
+})
 
 const Calendar = () => (
   <Layout>
@@ -213,7 +234,7 @@ const Calendar = () => (
         </a>
       </Col>
       {/* FSP@sacoders: maybe we can order by date */}
-      {data.map(event => (
+      {Events.map(event => (
         <>
           <Row className="mb-5 mt-5">
             <Col md={3}>
