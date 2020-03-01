@@ -5,17 +5,32 @@
   </a>
 </p>
 <h1 align="center">
-  Threads Of Love San Antonio
+  Threads Of Love for Heaven's Sake 
 </h1>
 
-## 💫 Staging Netlify Link 
+![Imgur](https://imgur.com/923usJa)
+
+## 💫 Staging Netlify Link
 
 [https://zealous-shaw-c82984.netlify.com/](https://zealous-shaw-c82984.netlify.com/)
 
-## 💫Master Netlify Link 
+## 💫Master Netlify Link
 
-[https://pedantic-easley-3bd320.netlify.com/](https://pedantic-easley-3bd320.netlify.com/)
+[https://fervent-joliot-0dfa63.netlify.com/](https://fervent-joliot-0dfa63.netlify.com/)
 
+## ❤️ Domain Purchased
+
+[https://threadsoflovesatx.org/](https://threadsoflovesatx.org/)
+
+## ✅ Trello Board
+
+[https://trello.com/b/p9H2JyJV/threads-of-love-for-heavens-sake](https://trello.com/b/p9H2JyJV/threads-of-love-for-heavens-sake)
+
+## Images
+
+Images are hosted on [cloudinary](https://cloudinary.com) and organized by folders and tags. GraphQL queries are based on tags for **Our Work** page.
+
+## From Gatsby
 
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
