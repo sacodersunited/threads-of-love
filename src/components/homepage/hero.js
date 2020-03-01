@@ -32,6 +32,10 @@ const Hero = () => (
           -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
           color: white;
+
+          @media (max-width: 575.98px) {
+            max-width: 300px;
+          }
         `}
       >
         <h1
