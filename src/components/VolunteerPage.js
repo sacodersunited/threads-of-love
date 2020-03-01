@@ -30,7 +30,7 @@ export const VolunteerPage = ({ boardMembers, images }) => (
     <h2>Volunteers</h2>
     <Row className="mt-5 mb-5">
       {images.map(image => (
-        <Col xs={6} md={3} key={image.id}>
+        <Col md={3} key={image.id}>
           <Image
             src={image.node.secure_url.replace(
               "upload/",
