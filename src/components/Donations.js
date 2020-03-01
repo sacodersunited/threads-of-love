@@ -4,6 +4,7 @@ import CountUp from "react-countup"
 import VisibilitySensor from "react-visibility-sensor"
 import TextLoop from "react-text-loop"
 import { FaBaby, FaHospital } from "react-icons/fa"
+import { css } from "@emotion/core"
 
 class Donations extends Component {
   state = {
@@ -24,7 +25,15 @@ class Donations extends Component {
             <Col md={6} style={{ margin: "0 auto" }}>
               <div style={{ textAlign: "center" }}>
                 <div style={{ color: "white", display: "inline" }}>
-                  <FaHospital size={100} style={{ padding: "5px" }} />
+                  <FaHospital
+                    size={100}
+                    style={{ padding: "5px" }}
+                    css={css`
+                      @media (max-width: 575.98px) {
+                        width: 60px;
+                      }
+                    `}
+                  />
                 </div>
                 <VisibilitySensor
                   onChange={this.onVisibilityChange}
@@ -50,14 +59,17 @@ class Donations extends Component {
                   />
                 </VisibilitySensor>
                 <span
-                  style={{
-                    fontSize: "x-large",
-                    color: "white",
-                    fontWeight: "900px",
-                    display: "inline",
-                    marginRight: "50px",
-                    verticalAlign: "middle",
-                  }}
+                  css={css`
+                    font-size: x-large;
+                    color: white;
+                    font-weight: 900px;
+                    display: inline;
+                    margin-right: 50px;
+                    vertical-align: middle;
+                    @media (max-width: 575.98px) {
+                      font-size: 16px;
+                    }
+                  `}
                 >
                   South Texas Hospitals
                 </span>
@@ -82,13 +94,26 @@ class Donations extends Component {
                     "Methodist Hospital – Stone Oak, SATX",
                     "Driscoll Children’s Hospital – Corpus Christi TX",
                   ]}
+                  css={css`
+                    @media (max-width: 575.98px) {
+                      font-size: 16px;
+                    }
+                  `}
                 ></TextLoop>
               </div>
             </Col>
             <Col md={6}>
               <div style={{ textAlign: "center" }}>
                 <div style={{ color: "white", display: "inline" }}>
-                  <FaBaby size={100} style={{ padding: "5px" }} />
+                  <FaBaby
+                    size={100}
+                    style={{ padding: "5px" }}
+                    css={css`
+                      @media (max-width: 575.98px) {
+                        width: 60px;
+                      }
+                    `}
+                  />
                 </div>
                 <VisibilitySensor
                   onChange={this.onVisibilityChange}
@@ -114,14 +139,17 @@ class Donations extends Component {
                   />
                 </VisibilitySensor>
                 <span
-                  style={{
-                    fontSize: "xx-large",
-                    color: "white",
-                    fontWeight: "900px",
-                    display: "inline",
-                    marginRight: "50px",
-                    verticalAlign: "middle",
-                  }}
+                  css={css`
+                    font-size: x-large;
+                    color: white;
+                    font-weight: 900px;
+                    display: inline;
+                    margin-right: 50px;
+                    vertical-align: middle;
+                    @media (max-width: 575.98px) {
+                      font-size: 16px;
+                    }
+                  `}
                 >
                   Donations!
                 </span>
