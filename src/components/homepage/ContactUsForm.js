@@ -1,16 +1,15 @@
 import React from "react"
 import {
-  Carousel,
   Form,
   Button,
   Container,
   Row,
   Col,
   Image,
+  Alert,
 } from "react-bootstrap"
 import InputMask from "react-input-mask"
-import contactImage from "../images/contact.jpg"
-import "../contact.css"
+import "./contact.css"
 
 class ContactUsForm extends React.Component {
   constructor(props) {
@@ -21,7 +20,9 @@ class ContactUsForm extends React.Component {
         name: "",
         email: "",
         phone: "",
+        comments: "",
       },
+      chars_left: 500,
       validated: false,
       isDone: false,
     }
@@ -46,6 +47,12 @@ class ContactUsForm extends React.Component {
         break
       case "Phone Number":
         contactInfo.phone = e.target.value
+        break
+      case "Comments":
+        contactInfo.comments = e.target.value
+        const charCount = e.target.value.length
+        const charLeft = 500 - charCount
+        this.setState({ chars_left: charLeft })
         break
       default:
         break
@@ -98,8 +105,12 @@ class ContactUsForm extends React.Component {
       this.state.contactUsForm.phone
     )}`
 
-    const querystring = `${eName}&${eEmail}&${ePhone}&formGoogleSheetName=responses`
+    let eComments = `${encodeURIComponent("comments")}=${encodeURIComponent(
+      this.state.contactUsForm.comments
+    )}`
 
+    const querystring = `${eName}&${eEmail}&${ePhone}&${eComments}&formGoogleSheetName=responses`
+    console.log("querySTring", querystring)
     fetch(
       "https://script.google.com/macros/s/AKfycbzDuxNglZMjY0LJhHH0kBS6Wtkg9uquHA5AXgf_w1oQQg0zpUyf/exec?" +
         querystring,
@@ -121,6 +132,7 @@ class ContactUsForm extends React.Component {
           name: "",
           email: "",
           phone: "",
+          comments: "",
         },
       })
 
@@ -140,12 +152,10 @@ class ContactUsForm extends React.Component {
           <Col md={6}>
             <Image
               id="contact-image"
-              src={contactImage}
-              //   style={{ minHeight: "500px", width: "100%" }}
+              src="https://res.cloudinary.com/azrael/image/upload/v1582083615/TOLFHS_BANNER_KOOP_1_a0nixr.jpg"
             ></Image>
           </Col>
-          <Col md={6}>
-            {/* <Carousel.Caption style={{ color: "black", textAlign: "left" }}> */}
+          <Col md={6} className="mt-5">
             <Form
               validated={this.state.validated}
               onSubmit={e => this.handleSubmit(e)}
@@ -168,6 +178,7 @@ class ContactUsForm extends React.Component {
                 <Form.Label>Email</Form.Label>
 
                 <Form.Control
+                  required
                   type="email"
                   placeholder="Email"
                   onChange={e => this.onChangeForm(e)}
@@ -194,10 +205,33 @@ class ContactUsForm extends React.Component {
                   )}
                 </InputMask>
               </Form.Group>
+              <Form.Group controlId="formComments">
+                <Form.Label>Comments</Form.Label>
+                <Form.Control
+                  as="textarea"
+                  rows="3"
+                  maxLength="500"
+                  placeholder="Comments"
+                  onChange={e => this.onChangeForm(e)}
+                  value={this.state.contactUsForm.comments}
+                />
+                <div style={{ float: "right" }}>
+                  {this.state.chars_left} characters left.
+                </div>
+              </Form.Group>
 
-              <Button type="submit">Submit</Button>
+              <Form.Group controlId="formButton">
+                <Button type="submit">Submit</Button>
+                {this.state.isDone ? (
+                  <Alert
+                    variant="success"
+                    style={{ display: "inline", marginLeft: "15px" }}
+                  >
+                    Form is submitted!
+                  </Alert>
+                ) : null}
+              </Form.Group>
             </Form>
-            {/* </Carousel.Caption> */}
           </Col>
         </Row>
       </Container>

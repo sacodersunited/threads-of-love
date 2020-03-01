@@ -8,13 +8,12 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Header from "./header"
-import Footer from "./footer"
-import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
-import Hero from "./hero"
-import ContactUsForm from "../components/ContactUsForm"
+import { Header } from "../header"
+import Footer from "../footer"
+import { css } from "@emotion/core"
+import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
-const Layout = ({ children }) => {
+const LayoutHomepage = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQueryHomepage {
       site {
@@ -26,18 +25,16 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div>
       <Header siteTitle={data.site.siteMetadata.title} homepage={true} />
-      <Hero />
-      <ContactUsForm />
-
+      {children}
       <Footer />
-    </>
+    </div>
   )
 }
 
-Layout.propTypes = {
+LayoutHomepage.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default LayoutHomepage

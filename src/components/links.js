@@ -24,6 +24,9 @@ const Links = ({ siteTitle }) => {
           >
             Get Involved
           </Link>
+          <Link to="/donate" className="nav-link" activeClassName="active">
+            Donate
+          </Link>
           <Link to="/volunteers" className="nav-link" activeClassName="active">
             Volunteers
           </Link>
@@ -31,9 +34,9 @@ const Links = ({ siteTitle }) => {
             Calendar
           </Link>
         </Nav>
-        <Link to="/donate">
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=S2BNR8FEE3UUU&source=url">
           <Button variant="primary">Donate Now</Button>
-        </Link>
+        </a>
       </Navbar.Collapse>
     </Container>
   )
