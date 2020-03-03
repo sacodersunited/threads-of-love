@@ -60,12 +60,12 @@ const About = () => (
         <p>
           Threads of Love (TOL) is a Christian faith based nationally known
           organization, dedicated to the production and distribution of clothing
-          amd care items for premature babies(living and deceased). Threads of
-          Love For Heaven's Sake at Community Bible Church (CBC) is an outreach
+          and care items for premature babies (living and deceased). Threads of
+          Love For Heavens Sake at Community Bible Church (CBC) is an outreach
           ministry, made up of a diverse group of men and women volunteers. All
-          donated materials and funds used for charitable purposes. No officer,
-          director, or individual associated with the organization receives
-          compensation for services.
+          donated materials and funds are used for charitable purposes. No
+          officer, director, or individual associated with the organization
+          receives compensation for services.
         </p>
       </Col>
     </RowWrapper>
