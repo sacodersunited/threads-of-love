@@ -18,7 +18,7 @@ const Mission = () => (
       </p>
       <p>
         Our ministry is not only to the infant but also to family members. We
-        pray to reach them during their pain, fears, or stress may be too
+        pray to reach them during their pain and fears or when stress may be too
         difficult to endure.
       </p>
     </Col>
