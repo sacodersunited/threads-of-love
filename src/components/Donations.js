@@ -87,11 +87,11 @@ class Donations extends Component {
                   springConfig={{ stiffness: 70, damping: 31 }}
                   adjustingSpeed={500}
                   children={[
-                    "Christus Santa Rosa Children’s Hospital – downtown SATX",
-                    "Christus Santa Rosa – Westover Hills SATX",
+                    "Christus Santa Rosa Children’s Hospital – downtown San Antonio TX",
+                    "Christus Santa Rosa – Westover Hills San Antonio TX",
                     "Christus Santa Rosa – New Braunfels TX",
-                    "St. Luke’s Baptist - SATX",
-                    "Methodist Hospital – Stone Oak, SATX",
+                    "St. Luke’s Baptist - San Antonio TX",
+                    "Methodist Hospital – Stone Oak, San Antonio TX",
                     "Driscoll Children’s Hospital – Corpus Christi TX",
                   ]}
                   css={css`
