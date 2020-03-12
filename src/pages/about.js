@@ -34,6 +34,7 @@ const About = () => (
       <SEO title="About Threads Of Love" />
 
       <h1>About Us </h1>
+      <span>Threads of Love Radio Interview with Linda Coward.</span>
       <iframe
         src="https://omny.fm/shows/project-one/project-one-threads-of-love-9-22-18/embed"
         width="100%"
@@ -101,7 +102,7 @@ const About = () => (
           <li>Methodist Hospital Stone Oak – San Antonio, TX</li>
           <li>Driscoll Children’s Hospital – Corpus Christi, TX</li>
           <li>
-            Eden’s Song Ministry – Home based in Lewiston, Idaho - Missionary’s
+            Eden’s Song Ministry – Home based in Lewiston, Idaho - Missionaries
             to 60 countries
           </li>
         </ul>
@@ -135,7 +136,7 @@ const About = () => (
       <Col md={6} className="mt-5 mb-5">
         <h2>Our Mission and Ministry</h2>
         <p>
-          Our mission is to provide necessary clothing and aid's to premature
+          Our mission is to provide necessary clothing and aids to premature
           babies in hospitals and burial items to families whose baby was unable
           to survive the premature birth.
         </p>
@@ -151,7 +152,9 @@ const About = () => (
       <Col md={6} className="mt-5 mb-5">
         <h2>How Can You Help?</h2>
         <p>Pray for our Threads of Love for Heaven's Sake.</p>
-        <p>Become involved.</p>
+        <p>
+          <Link to="/get-involved">Become involved.</Link>
+        </p>
         <p>
           Come be part of the work, sew, crochet, knit, paint, or there are many
           items that require cutting and other hand work. This ministry includes
@@ -173,6 +176,11 @@ const About = () => (
           <Link to="/get-involved">
             <Button variant="outline-primary" className="ml-3">
               Volunteer
+            </Button>
+          </Link>
+          <Link to="/get-involved">
+            <Button variant="outline-primary" className="ml-3">
+              Get Involved
             </Button>
           </Link>
         </ButtonToolbar>

@@ -226,8 +226,9 @@ const Calendar = () => (
       <h1>Calendar of Events</h1>
       <Col md={7}>
         <p className="lead">
-          Threads of Love For Heaven's Sake at Community Bible Church (CBC) meet
-          the 2nd and 4th Mondays of the month. Hope to see you there.
+          Threads of Love For Heaven's Sake at Community Bible Church (CBC)
+          meets the 2nd and 4th Mondays of the month. During the month of May,
+          meetings are on the 11th and 25th. Hope to see you there.
         </p>
         <a href={CalendarDoc} className="btn btn-primary">
           Download Calendar
