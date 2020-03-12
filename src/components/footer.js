@@ -16,7 +16,7 @@ const Footer = () => (
     >
       <Container>
         <Row>
-          <Col md={4}>
+          <Col md={3}>
             <Link to="/">
               <Navbar.Brand>Threads of Love</Navbar.Brand>
             </Link>
@@ -45,15 +45,15 @@ const Footer = () => (
               <FaFacebookF /> Facebook
             </a>
           </Col>
-          <Col md={4} className="text-white">
-            <address>
-              2477 N Loop 1604 East, San Antonio, TX 78232 <br />
-              c/o Linda Coward
-            </address>
-
-            <a href="mailto:threadsoflove@gmail.com" className="text-white">
-              tolatcbc@gmail.com
-            </a>
+          <Col md={5} className="text-white">
+            <address>2477 N Loop 1604 East</address>
+            <address>San Antonio, TX 78232</address>
+            c/o Linda Coward
+            <p>
+              <a href="mailto:threadsoflove@gmail.com" className="text-white">
+                tolatcbc@gmail.com
+              </a>
+            </p>
           </Col>
         </Row>
       </Container>

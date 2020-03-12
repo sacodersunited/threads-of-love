@@ -23,11 +23,11 @@ const GetInvolved = () => (
             `}
           >
             <p className="lead">
-              If you attend Community Bible Church (CBC) we are listed under
-              adult groups at CBC. You may list as an interested party and email
-              the Threads of Love at CBC ministry group. You will be contacted
-              by our director, Linda Coward, or other members, either by phone,
-              email, depending on the information given.
+              If you attend Community Bible Church (CBC), we are listed under
+              adult groups at CBC. You may inquire as an interested party and
+              email the Threads of Love at CBC ministry group. You will be
+              contacted by our director, Linda Coward, or other members, either
+              by phone, email, depending on the information given.
             </p>
             <p>
               <a href="tel:+1210-268-4351">

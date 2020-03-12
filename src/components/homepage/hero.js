@@ -66,7 +66,7 @@ const Hero = () => (
           `}
         >
           Who knew that such small feet could leave such big imprints on your
-          hearts.
+          heart.
         </p>
       </Container>
     </div>
