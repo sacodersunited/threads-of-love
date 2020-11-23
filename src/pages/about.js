@@ -102,6 +102,7 @@ const About = () => (
           <li>St. Luke’s Baptist Hospital San Antonio, Tx</li>
           <li>Methodist Hospital Stone Oak – San Antonio, TX</li>
           <li>Driscoll Children’s Hospital – Corpus Christi, TX</li>
+          <li>Methodist Hospital Medical Center</li>
           <li>
             Eden’s Song Ministry – Home based in Lewiston, Idaho - Missionaries
             to 60 countries
