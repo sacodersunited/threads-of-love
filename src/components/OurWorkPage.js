@@ -21,7 +21,7 @@ class OurWorkPage extends React.Component {
     super(props)
 
     this.state = {
-      selected: "OUR WORK",
+      selected: " Picture Perfect Especially For Babies",
       mobileSelectIndex: 0,
       mainImageIndex: 0,
     }
