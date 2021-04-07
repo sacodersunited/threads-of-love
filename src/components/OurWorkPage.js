@@ -4,6 +4,8 @@ import { css } from "@emotion/core"
 import "../css/ourwork.css"
 import { productThumbs } from "./helpers"
 
+// TODO: Paul can you figure out how to change `Our Work` to `Picture Perfect Especially For Babies` ?
+
 const categories = [
   "OUR WORK",
   "CAPS",
