@@ -93,6 +93,8 @@ class Donations extends Component {
                     "St. Luke’s Baptist - San Antonio TX",
                     "Methodist Hospital – Stone Oak, San Antonio TX",
                     "Driscoll Children’s Hospital – Corpus Christi TX",
+                    "Methodist Hospital Medical Center",
+                    "Eden’s Song ministry",
                   ]}
                   css={css`
                     @media (max-width: 575.98px) {
