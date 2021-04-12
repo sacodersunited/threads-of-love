@@ -10,7 +10,6 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Header } from "../header"
 import Footer from "../footer"
-import { css } from "@emotion/core"
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
 const LayoutHomepage = ({ children }) => {
