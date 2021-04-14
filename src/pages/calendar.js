@@ -3,12 +3,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container, Col, Row, Image } from "react-bootstrap"
 import { Link } from "gatsby"
-import CalendarDoc from "../docs/TOL 2020 CALENDAR JPG FILE.jpg"
+import CalendarDoc from "../docs/TOL-2021-calendar.jpg"
 
 const data = [
   {
     title: "TOL February Meeting",
-    date: "28 FEB 2020",
+    date: "22 FEB 2021",
     time: "9:30AM",
     location: "Community Bible Church",
     imageSrc:
@@ -18,7 +18,7 @@ const data = [
   },
   {
     title: "TOL March Meeting",
-    date: "9 MAR 2020",
+    date: "8 MAR 2021",
     time: "9:30AM",
     location: "Community Bible Church",
     imageSrc:
@@ -28,7 +28,7 @@ const data = [
   },
   {
     title: "TOL March Meeting",
-    date: "23 MAR 2020",
+    date: "22 MAR 2021",
     time: "9:30AM",
     location: "Community Bible Church",
     imageSrc:
@@ -38,7 +38,7 @@ const data = [
   },
   {
     title: "TOL April Meeting",
-    date: "6 April 2020",
+    date: "12 April 2021",
     time: "9:30AM",
     location: "Community Bible Church",
     imageSrc:
@@ -48,7 +48,7 @@ const data = [
   },
   {
     title: "TOL April Meeting",
-    date: "20 April 2020",
+    date: "26 April 2021",
     time: "9:30AM",
     location: "Community Bible Church",
     imageSrc:
@@ -59,7 +59,7 @@ const data = [
 
   {
     title: "TOL May Meeting",
-    date: "4 MAY 2020",
+    date: "10 MAY 2021",
     time: "9:30AM",
     location: "Community Bible Church",
     imageSrc:
@@ -69,7 +69,7 @@ const data = [
   },
   {
     title: "TOL May Meeting",
-    date: "18 MAY 2020",
+    date: "24 MAY 2021",
     time: "9:30AM",
     location: "Community Bible Church",
     imageSrc:
@@ -79,7 +79,7 @@ const data = [
   },
   {
     title: "TOL June Meeting",
-    date: "8 JUN 2020",
+    date: "14 JUN 2021",
     time: "9:30AM",
     location: "Community Bible Church",
     imageSrc:
@@ -89,7 +89,7 @@ const data = [
   },
   {
     title: "TOL June Meeting",
-    date: "22 JUN 2020",
+    date: "28 JUN 2021",
     time: "9:30AM",
     location: "Community Bible Church",
     imageSrc:
@@ -99,7 +99,7 @@ const data = [
   },
   {
     title: "TOL July Meeting",
-    date: "13 JUL 2020",
+    date: "12 JUL 2021",
     time: "9:30AM",
     location: "Community Bible Church",
     imageSrc:
@@ -109,7 +109,7 @@ const data = [
   },
   {
     title: "TOL July Meeting",
-    date: "27 JUL 2020",
+    date: "26 JUL 2021",
     time: "9:30AM",
     location: "Community Bible Church",
     imageSrc:
@@ -119,7 +119,7 @@ const data = [
   },
   {
     title: "TOL August Meeting",
-    date: "10 AUG 2020",
+    date: "9 AUG 2021",
     time: "9:30AM",
     location: "Community Bible Church",
     imageSrc:
@@ -129,7 +129,7 @@ const data = [
   },
   {
     title: "TOL August Meeting",
-    date: "24 AUG 2020",
+    date: "23 AUG 2021",
     time: "9:30AM",
     location: "Community Bible Church",
     imageSrc:
@@ -139,7 +139,7 @@ const data = [
   },
   {
     title: "TOL September Meeting",
-    date: "14 SEP 2020",
+    date: "13 SEP 2021",
     time: "9:30AM",
     location: "Community Bible Church",
     imageSrc:
@@ -149,7 +149,7 @@ const data = [
   },
   {
     title: "TOL September Meeting",
-    date: "28 SEP 2020",
+    date: "27 SEP 2021",
     time: "9:30AM",
     location: "Community Bible Church",
     imageSrc:
@@ -159,7 +159,7 @@ const data = [
   },
   {
     title: "TOL October Meeting",
-    date: "12 OCT 2020",
+    date: "11 OCT 2021",
     time: "9:30AM",
     location: "Community Bible Church",
     imageSrc:
@@ -169,7 +169,7 @@ const data = [
   },
   {
     title: "TOL October Meeting",
-    date: "26 OCT 2020",
+    date: "25 OCT 2021",
     time: "9:30AM",
     location: "Community Bible Church",
     imageSrc:
@@ -179,7 +179,7 @@ const data = [
   },
   {
     title: "TOL November Meeting",
-    date: "9 NOV 2020",
+    date: "8 NOV 2021",
     time: "9:30AM",
     location: "Community Bible Church",
     imageSrc:
@@ -189,7 +189,7 @@ const data = [
   },
   {
     title: "TOL November Meeting",
-    date: "23 NOV 2020",
+    date: "22 NOV 2021",
     time: "9:30AM",
     location: "Community Bible Church",
     imageSrc:
@@ -199,7 +199,7 @@ const data = [
   },
   {
     title: "TOL December Meeting",
-    date: "14 DEC 2020",
+    date: "13 DEC 2021",
     time: "9:30AM",
     location: "Community Bible Church",
     imageSrc:
