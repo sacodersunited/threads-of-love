@@ -10,6 +10,7 @@ import {
 } from "react-bootstrap"
 import InputMask from "react-input-mask"
 import "./contact.css"
+import logo from "../../images/TOL-logo.png"
 
 class ContactUsForm extends React.Component {
   constructor(props) {
@@ -120,7 +121,7 @@ class ContactUsForm extends React.Component {
           "Content-Type": "application/x-www-form-urlencoded",
         },
       }
-    ).then(response => {
+    ).then((response) => {
       if (!response.ok) {
         throw Error("Network request failed")
       }
@@ -150,15 +151,12 @@ class ContactUsForm extends React.Component {
       <Container className="contact-container">
         <Row>
           <Col md={6}>
-            <Image
-              id="contact-image"
-              src="https://res.cloudinary.com/azrael/image/upload/v1582083615/TOLFHS_BANNER_KOOP_1_a0nixr.jpg"
-            ></Image>
+            <img id="contact-image" src={logo} />
           </Col>
           <Col md={6} className="mt-5">
             <Form
               validated={this.state.validated}
-              onSubmit={e => this.handleSubmit(e)}
+              onSubmit={(e) => this.handleSubmit(e)}
             >
               <h4>GET INVOLVED</h4>
 
@@ -170,7 +168,7 @@ class ContactUsForm extends React.Component {
                   type="text"
                   placeholder="Name"
                   value={this.state.contactUsForm.name}
-                  onChange={e => this.onChangeForm(e)}
+                  onChange={(e) => this.onChangeForm(e)}
                 />
               </Form.Group>
 
@@ -181,7 +179,7 @@ class ContactUsForm extends React.Component {
                   required
                   type="email"
                   placeholder="Email"
-                  onChange={e => this.onChangeForm(e)}
+                  onChange={(e) => this.onChangeForm(e)}
                   value={this.state.contactUsForm.email}
                 />
               </Form.Group>
@@ -193,10 +191,10 @@ class ContactUsForm extends React.Component {
                   {...this.props}
                   mask="(999) 999-9999"
                   maskChar=" "
-                  onChange={e => this.onChangeForm(e)}
+                  onChange={(e) => this.onChangeForm(e)}
                   value={this.state.contactUsForm.phone}
                 >
-                  {inputProps => (
+                  {(inputProps) => (
                     <Form.Control
                       {...inputProps}
                       type="tel"
@@ -212,7 +210,7 @@ class ContactUsForm extends React.Component {
                   rows="3"
                   maxLength="500"
                   placeholder="Comments"
-                  onChange={e => this.onChangeForm(e)}
+                  onChange={(e) => this.onChangeForm(e)}
                   value={this.state.contactUsForm.comments}
                 />
                 <div style={{ float: "right" }}>
