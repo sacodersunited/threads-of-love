@@ -83,8 +83,7 @@ const About = () => (
           born to mothers with drug addition. The items mentioned above are only
           a few of the handmade items made by our TOL volunteers. The gifts are
           then donated to hospital Neonatal Intensive Care Units and Pediatric
-          Intensive Care Unit. Items are produced by Threads of Love chapters
-          are donated with no charge to the recipients.
+          Intensive Care Unit. Items produced by Threads of Love chapters are donated with no charge to the recipients.
         </p>
         <p>
           Hospitals presently receiving donations from TOL For Heaven's Sake
