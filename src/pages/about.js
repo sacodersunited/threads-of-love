@@ -50,8 +50,9 @@ const About = () => (
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/YlEbigiN1kI"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            src="https://www.youtube.com/embed/kVl2frIvHzY"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
         </ResponsiveEmbed>
@@ -82,8 +83,7 @@ const About = () => (
           born to mothers with drug addition. The items mentioned above are only
           a few of the handmade items made by our TOL volunteers. The gifts are
           then donated to hospital Neonatal Intensive Care Units and Pediatric
-          Intensive Care Unit. Items are produced by Threads of Love chapters
-          are donated with no charge to the recipients.
+          Intensive Care Unit. Items produced by Threads of Love chapters are donated with no charge to the recipients.
         </p>
         <p>
           Hospitals presently receiving donations from TOL For Heaven's Sake
@@ -101,6 +101,7 @@ const About = () => (
           <li>St. Luke’s Baptist Hospital San Antonio, Tx</li>
           <li>Methodist Hospital Stone Oak – San Antonio, TX</li>
           <li>Driscoll Children’s Hospital – Corpus Christi, TX</li>
+          <li>Methodist Hospital Medical Center</li>
           <li>
             Eden’s Song Ministry – Home based in Lewiston, Idaho - Missionaries
             to 60 countries

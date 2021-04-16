@@ -14,9 +14,9 @@ const Footer = () => (
         background-color: #2f124d !important;
       `}
     >
-      <Container>
+      <Container style={{ display: "initial" }}>
         <Row>
-          <Col md={3}>
+          <Col md={4}>
             <Link to="/">
               <Navbar.Brand>Threads of Love</Navbar.Brand>
             </Link>
@@ -27,9 +27,15 @@ const Footer = () => (
               <a href="https://www.gatsbyjs.org" className="text-white">
                 Gatsby
               </a>
+              <a
+                className="text-white nav-link pl-0"
+                href="https://facebook.com"
+              >
+                <FaFacebookF /> Facebook
+              </a>
             </p>
           </Col>
-          <Col md={2} className="text-white">
+          <Col md={4} className="text-white">
             <Link className="text-white nav-link" to="/about">
               About Us
             </Link>
@@ -39,13 +45,12 @@ const Footer = () => (
             <Link className="text-white nav-link" to="/donate">
               Donate
             </Link>
+            <Link to="/#contact" className="text-white nav-link">
+              Contact Us
+            </Link>
           </Col>
-          <Col md={2} className="text-white">
-            <a className="text-white nav-link" href="https://facebook.com">
-              <FaFacebookF /> Facebook
-            </a>
-          </Col>
-          <Col md={5} className="text-white">
+
+          <Col md={4} className="text-white">
             <address>2477 N Loop 1604 East</address>
             <address>San Antonio, TX 78232</address>
             c/o Linda Coward

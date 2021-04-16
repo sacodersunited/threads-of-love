@@ -23,11 +23,20 @@ const GetInvolved = () => (
             `}
           >
             <p className="lead">
-              If you attend Community Bible Church (CBC), we are listed under
-              adult groups at CBC. You may inquire as an interested party and
-              email the Threads of Love at CBC ministry group. You will be
-              contacted by our director, Linda Coward, or other members, either
-              by phone, email, depending on the information given.
+              You're invited to help in our volunteer efforts for our community.
+              Here are some ways for you to contact us. See the calendar section
+              for the chapter schedule at Community Bible Church. We gather the
+              2nd and 4th Monday of the month, 9:30 am until 2:30 pm
+              Administration and Education Building 2nd Floor It isn't necessary
+              to schedule ahead of time, unless it's more convenient for you.
+              Everyone is welcome, drop in for a tour or stay as long as you
+              like.
+              <br />
+              Contact Us by using the : Get Involved Sign Up Information, (on
+              this website) email address:{" "}
+              <a href="mailto:tolatcbc@gmail.com">tolatcbc@gmail.com</a>,
+              <br />
+              Call or Text Message: 210 268-4351 Linda Coward, Chapter Director
             </p>
             <p>
               <a href="tel:+1210-268-4351">

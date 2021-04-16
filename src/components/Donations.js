@@ -11,7 +11,7 @@ class Donations extends Component {
     didViewCountUp: false,
   }
 
-  onVisibilityChange = isVisible => {
+  onVisibilityChange = (isVisible) => {
     if (isVisible) {
       this.setState({ didViewCountUp: true })
     }
@@ -44,7 +44,7 @@ class Donations extends Component {
                 >
                   <CountUp
                     delay={2}
-                    end={this.state.didViewCountUp ? 6 : 0}
+                    end={this.state.didViewCountUp ? 7 : 0}
                     size={300}
                     separator=","
                     duration="3"
@@ -93,6 +93,8 @@ class Donations extends Component {
                     "St. Luke’s Baptist - San Antonio TX",
                     "Methodist Hospital – Stone Oak, San Antonio TX",
                     "Driscoll Children’s Hospital – Corpus Christi TX",
+                    "Methodist Hospital Medical Center",
+                    "Eden’s Song ministry",
                   ]}
                   css={css`
                     @media (max-width: 575.98px) {
@@ -124,7 +126,7 @@ class Donations extends Component {
                 >
                   <CountUp
                     delay={2}
-                    end={this.state.didViewCountUp ? 4698 : 0}
+                    end={this.state.didViewCountUp ? 8205 : 0}
                     size={300}
                     separator=","
                     duration="5"

@@ -33,6 +33,9 @@ const Links = ({ siteTitle }) => {
           <Link to="/calendar" className="nav-link" activeClassName="active">
             Calendar
           </Link>
+          <Link to="/#contact" className="nav-link" activeClassName="active">
+            Contact Us
+          </Link>
         </Nav>
         <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=S2BNR8FEE3UUU&source=url">
           <Button variant="primary">Donate Now</Button>

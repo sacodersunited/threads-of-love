@@ -29,7 +29,7 @@ const boardMembers = [
     name: "Linda Coward",
     position: "Chapter Director",
     imgSrc:
-      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1579835178/board%20members/D25A1168-Edit_qu5sww.jpg",
+      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1606097411/board%20members/linda-new2_eqdwgb.jpg",
   },
 
   {
