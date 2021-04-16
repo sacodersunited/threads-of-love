@@ -11,7 +11,7 @@ class Donations extends Component {
     didViewCountUp: false,
   }
 
-  onVisibilityChange = isVisible => {
+  onVisibilityChange = (isVisible) => {
     if (isVisible) {
       this.setState({ didViewCountUp: true })
     }
@@ -44,7 +44,7 @@ class Donations extends Component {
                 >
                   <CountUp
                     delay={2}
-                    end={this.state.didViewCountUp ? 6 : 0}
+                    end={this.state.didViewCountUp ? 7 : 0}
                     size={300}
                     separator=","
                     duration="3"
@@ -126,7 +126,7 @@ class Donations extends Component {
                 >
                   <CountUp
                     delay={2}
-                    end={this.state.didViewCountUp ? 4698 : 0}
+                    end={this.state.didViewCountUp ? 8205 : 0}
                     size={300}
                     separator=","
                     duration="5"

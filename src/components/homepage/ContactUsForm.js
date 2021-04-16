@@ -158,7 +158,7 @@ class ContactUsForm extends React.Component {
               validated={this.state.validated}
               onSubmit={(e) => this.handleSubmit(e)}
             >
-              <h4>GET INVOLVED</h4>
+              <h4 id="contact">GET INVOLVED</h4>
 
               <Form.Group controlId="formBasicName">
                 <Form.Label>Name</Form.Label>
