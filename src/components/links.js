@@ -12,7 +12,7 @@ const Links = ({ siteTitle }) => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Link to="/our-work" className="nav-link" activeClassName="active">
-            Our Work
+            Ministry Favorites
           </Link>
           <Link to="/about" className="nav-link" activeClassName="active">
             About Us
