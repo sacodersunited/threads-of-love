@@ -11,7 +11,11 @@ const Links = ({ siteTitle }) => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Link to="/our-work" className="nav-link" activeClassName="active">
+          <Link
+            to="/ministry-favorites"
+            className="nav-link"
+            activeClassName="active"
+          >
             Ministry Favorites
           </Link>
           <Link to="/about" className="nav-link" activeClassName="active">

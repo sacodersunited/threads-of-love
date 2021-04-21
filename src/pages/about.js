@@ -14,8 +14,8 @@ import {
 import styled from "@emotion/styled"
 
 const RowStyles = styled.div`
-  color: ${props => (props.txtColor ? props.txtColor : "#212529")};
-  background-color: ${props => (props.bkColor ? props.bkColor : "white")};
+  color: ${(props) => (props.txtColor ? props.txtColor : "#212529")};
+  background-color: ${(props) => (props.bkColor ? props.bkColor : "white")};
   min-height: 35rem;
   padding: 20px 0;
 `
@@ -50,7 +50,7 @@ const About = () => (
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/kVl2frIvHzY"
+            src="https://www.youtube.com/embed/Fyb91qeHCJc"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
@@ -83,7 +83,8 @@ const About = () => (
           born to mothers with drug addition. The items mentioned above are only
           a few of the handmade items made by our TOL volunteers. The gifts are
           then donated to hospital Neonatal Intensive Care Units and Pediatric
-          Intensive Care Unit. Items produced by Threads of Love chapters are donated with no charge to the recipients.
+          Intensive Care Unit. Items produced by Threads of Love chapters are
+          donated with no charge to the recipients.
         </p>
         <p>
           Hospitals presently receiving donations from TOL For Heaven's Sake

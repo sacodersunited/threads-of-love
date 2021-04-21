@@ -209,7 +209,7 @@ const data = [
   },
 ]
 const Today = new Date()
-const Events = data.filter(event => {
+const Events = data.filter((event) => {
   console.log("event data", event)
   let eventDate = new Date(event.date)
   if (Today < eventDate) {
@@ -227,15 +227,14 @@ const Calendar = () => (
       <Col md={7}>
         <p className="lead">
           Threads of Love For Heaven's Sake at Community Bible Church (CBC)
-          meets the 2nd and 4th Mondays of the month. During the month of May,
-          meetings are on the 11th and 25th. Hope to see you there.
+          meets the 2nd and 4th Mondays of the month. Hope to see you there.
         </p>
         <a href={CalendarDoc} className="btn btn-primary">
           Download Calendar
         </a>
       </Col>
       {/* FSP@sacoders: maybe we can order by date */}
-      {Events.map(event => (
+      {Events.map((event) => (
         <>
           <Row className="mb-5 mt-5">
             <Col md={3}>
