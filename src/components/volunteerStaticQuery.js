@@ -13,7 +13,7 @@ const boardMembers = [
   {
     id: 1157,
     name: "Martha Hefling",
-    position: "Associate Director/ Manager Fabric Production",
+    position: "",
     imgSrc:
       "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1579835178/board%20members/D25A1157_uy4hej.jpg",
   },
@@ -35,7 +35,7 @@ const boardMembers = [
   {
     id: 1164,
     name: "Jerry Coward",
-    position: "Treasurer/Accounts Manager",
+    position: "Treasurer/Accounts Manager/Associate Director",
     imgSrc:
       "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1579835178/board%20members/D25A1164-Edit_l6nbwb.jpg",
   },
@@ -48,7 +48,7 @@ const boardMembers = [
   },
 ]
 
-const VolunteerStaticQuery = props => (
+const VolunteerStaticQuery = (props) => (
   <StaticQuery
     query={graphql`
       query volunteerImages {
@@ -63,7 +63,7 @@ const VolunteerStaticQuery = props => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <VolunteerPage
         boardMembers={boardMembers}
         images={data.allCloudinaryMedia.edges}
