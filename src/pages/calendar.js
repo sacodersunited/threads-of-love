@@ -14,7 +14,7 @@ const data = [
     imageSrc:
       "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
     description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:00 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
   },
   {
     title: "TOL March Meeting",
@@ -24,7 +24,7 @@ const data = [
     imageSrc:
       "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
     description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:00 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
   },
   {
     title: "TOL March Meeting",
@@ -34,7 +34,7 @@ const data = [
     imageSrc:
       "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
     description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:00 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
   },
   {
     title: "TOL April Meeting",
@@ -44,7 +44,7 @@ const data = [
     imageSrc:
       "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
     description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:00 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
   },
   {
     title: "TOL April Meeting",
@@ -54,7 +54,7 @@ const data = [
     imageSrc:
       "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
     description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:00 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
   },
 
   {
@@ -65,7 +65,7 @@ const data = [
     imageSrc:
       "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
     description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:00 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
   },
   {
     title: "TOL May Meeting",
@@ -75,7 +75,7 @@ const data = [
     imageSrc:
       "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
     description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:00 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
   },
   {
     title: "TOL June Meeting",
@@ -85,7 +85,7 @@ const data = [
     imageSrc:
       "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
     description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:00 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
   },
   {
     title: "TOL June Meeting",
@@ -95,7 +95,7 @@ const data = [
     imageSrc:
       "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
     description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:00 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
   },
   {
     title: "TOL July Meeting",
@@ -105,7 +105,7 @@ const data = [
     imageSrc:
       "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
     description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:00 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
   },
   {
     title: "TOL July Meeting",
@@ -115,7 +115,7 @@ const data = [
     imageSrc:
       "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
     description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:00 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
   },
   {
     title: "TOL August Meeting",
@@ -125,7 +125,7 @@ const data = [
     imageSrc:
       "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
     description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:00 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
   },
   {
     title: "TOL August Meeting",
@@ -135,7 +135,7 @@ const data = [
     imageSrc:
       "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
     description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:00 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
   },
   {
     title: "TOL September Meeting",
@@ -145,7 +145,7 @@ const data = [
     imageSrc:
       "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
     description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:00 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
   },
   {
     title: "TOL September Meeting",
@@ -155,7 +155,7 @@ const data = [
     imageSrc:
       "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
     description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:00 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
   },
   {
     title: "TOL October Meeting",
@@ -165,7 +165,7 @@ const data = [
     imageSrc:
       "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
     description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:00 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
   },
   {
     title: "TOL October Meeting",
@@ -175,7 +175,7 @@ const data = [
     imageSrc:
       "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
     description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:00 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
   },
   {
     title: "TOL November Meeting",
@@ -185,7 +185,7 @@ const data = [
     imageSrc:
       "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
     description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:00 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
   },
   {
     title: "TOL November Meeting",
@@ -195,7 +195,7 @@ const data = [
     imageSrc:
       "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
     description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:00 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
   },
   {
     title: "TOL December Meeting",
@@ -205,7 +205,7 @@ const data = [
     imageSrc:
       "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
     description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:00 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
   },
 ]
 const Today = new Date()
