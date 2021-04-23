@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Container, Col, Image, Button } from "react-bootstrap"
+import { Container, Col, Image } from "react-bootstrap"
 
 const Donate = () => (
   <Layout>
