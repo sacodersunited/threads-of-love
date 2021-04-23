@@ -1,15 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Container, Row, ResponsiveEmbed } from "react-bootstrap"
-import styled from "@emotion/styled"
-
-const RowStyles = styled.div`
-  color: ${(props) => (props.txtColor ? props.txtColor : "#212529")};
-  background-color: ${(props) => (props.bkColor ? props.bkColor : "white")};
-  min-height: 35rem;
-  padding: 20px 0;
-`
+import { Container, ResponsiveEmbed } from "react-bootstrap"
 
 const OurWork = () => (
   <Layout isFullWidth>

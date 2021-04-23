@@ -1,4 +1,4 @@
-import React, { Children } from "react"
+import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
@@ -46,12 +46,24 @@ const About = () => (
 
     <RowWrapper bkColor="rebeccapurple" txtColor="white">
       <Col md={6} className="mt-5 mb-5">
-        <ResponsiveEmbed aspectRatio="16by9">
+        <ResponsiveEmbed aspectRatio="16by9" style={{ marginBottom: "10px" }}>
           <iframe
             width="560"
             height="315"
             src="https://www.youtube.com/embed/oymnIcZMMjU"
             frameborder="0"
+            title="TOL invite"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </ResponsiveEmbed>
+        <ResponsiveEmbed aspectRatio="16by9">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Fyb91qeHCJc"
+            frameborder="0"
+            title="TOL Radio"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
