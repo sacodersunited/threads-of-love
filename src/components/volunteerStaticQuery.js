@@ -13,7 +13,7 @@ const boardMembers = [
   {
     id: 1157,
     name: "Martha Hefling",
-    position: "",
+    position: "Manager-Fabrics/Designs/Machines",
     imgSrc:
       "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1579835178/board%20members/D25A1157_uy4hej.jpg",
   },

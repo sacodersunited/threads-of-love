@@ -50,7 +50,7 @@ const About = () => (
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/Fyb91qeHCJc"
+            src="https://www.youtube.com/embed/oymnIcZMMjU"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen

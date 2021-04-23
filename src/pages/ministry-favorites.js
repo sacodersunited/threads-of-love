@@ -1,16 +1,7 @@
 import React from "react"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import {
-  Container,
-  Row,
-  Col,
-  Image,
-  Button,
-  ButtonToolbar,
-  ResponsiveEmbed,
-} from "react-bootstrap"
+import { Container, Row, ResponsiveEmbed } from "react-bootstrap"
 import styled from "@emotion/styled"
 
 const RowStyles = styled.div`
@@ -19,14 +10,6 @@ const RowStyles = styled.div`
   min-height: 35rem;
   padding: 20px 0;
 `
-
-const RowWrapper = ({ children, bkColor, txtColor }) => (
-  <RowStyles bkColor={bkColor} txtColor={txtColor}>
-    <Container>
-      <Row>{children}</Row>
-    </Container>
-  </RowStyles>
-)
 
 const OurWork = () => (
   <Layout isFullWidth>
@@ -37,6 +20,7 @@ const OurWork = () => (
         <iframe
           width="560"
           height="315"
+          title="TOL invite"
           src="https://www.youtube.com/embed/HO1uRmgfYws"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
