@@ -1,13 +1,5 @@
 import React from "react"
-import {
-  Form,
-  Button,
-  Container,
-  Row,
-  Col,
-  Image,
-  Alert,
-} from "react-bootstrap"
+import { Form, Button, Container, Row, Col, Alert } from "react-bootstrap"
 import InputMask from "react-input-mask"
 import "./contact.css"
 import logo from "../../images/TOL-logo.png"
@@ -151,7 +143,7 @@ class ContactUsForm extends React.Component {
       <Container className="contact-container">
         <Row>
           <Col md={6}>
-            <img id="contact-image" src={logo} />
+            <img id="contact-image" src={logo} alt="TOL logo" />
           </Col>
           <Col md={6} className="mt-5">
             <Form
