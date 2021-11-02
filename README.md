@@ -28,7 +28,7 @@
 
 ## Images
 
-Images are hosted on [cloudinary](https://cloudinary.com) and organized by folders and tags. GraphQL queries are based on tags for **Our Work** page.
+Images are hosted on [cloudinary](https://cloudinary.com) and organized by folders and tags. GraphQL queries are based on tags for **volunteers** for the Volunteers page.
 
 ## From Gatsby
 
