@@ -10,10 +10,6 @@
 
 ![Imgur](https://imgur.com/923usJa)
 
-## 💫 Staging Netlify Link
-
-[https://zealous-shaw-c82984.netlify.com/](https://zealous-shaw-c82984.netlify.com/)
-
 ## 💫Master Netlify Link
 
 [https://fervent-joliot-0dfa63.netlify.com/](https://fervent-joliot-0dfa63.netlify.com/)
