@@ -2,215 +2,99 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container, Col, Row, Image } from "react-bootstrap"
-import { Link } from "gatsby"
-import CalendarDoc from "../docs/TOL-2021-calendar.jpg"
+import CalendarDoc from "../docs/TOL-2022-calendar.jpeg"
+
+const MTG_IMG =
+  "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg"
+
+const MTG_DESCR =
+  "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business."
 
 const data = [
   {
     title: "TOL February Meeting",
-    date: "22 FEB 2021",
-    time: "9:30AM",
-    location: "Community Bible Church",
-    imageSrc:
-      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
-    description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+    date: "28 FEB 2022",
   },
   {
     title: "TOL March Meeting",
-    date: "8 MAR 2021",
-    time: "9:30AM",
-    location: "Community Bible Church",
-    imageSrc:
-      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
-    description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+    date: "14 MAR 2022",
   },
   {
     title: "TOL March Meeting",
-    date: "22 MAR 2021",
-    time: "9:30AM",
-    location: "Community Bible Church",
-    imageSrc:
-      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
-    description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+    date: "28 MAR 2022",
   },
   {
     title: "TOL April Meeting",
-    date: "12 April 2021",
-    time: "9:30AM",
-    location: "Community Bible Church",
-    imageSrc:
-      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
-    description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+    date: "11 April 2022",
   },
   {
     title: "TOL April Meeting",
-    date: "26 April 2021",
-    time: "9:30AM",
-    location: "Community Bible Church",
-    imageSrc:
-      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
-    description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+    date: "25 April 2022",
   },
 
   {
     title: "TOL May Meeting",
-    date: "10 MAY 2021",
-    time: "9:30AM",
-    location: "Community Bible Church",
-    imageSrc:
-      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
-    description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+    date: "9 MAY 2022",
   },
   {
     title: "TOL May Meeting",
-    date: "24 MAY 2021",
-    time: "9:30AM",
-    location: "Community Bible Church",
-    imageSrc:
-      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
-    description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+    date: "23 MAY 2022",
   },
   {
     title: "TOL June Meeting",
-    date: "14 JUN 2021",
-    time: "9:30AM",
-    location: "Community Bible Church",
-    imageSrc:
-      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
-    description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+    date: "13 JUN 2022",
   },
   {
     title: "TOL June Meeting",
-    date: "28 JUN 2021",
-    time: "9:30AM",
-    location: "Community Bible Church",
-    imageSrc:
-      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
-    description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+    date: "27 JUN 2022",
   },
   {
     title: "TOL July Meeting",
-    date: "12 JUL 2021",
-    time: "9:30AM",
-    location: "Community Bible Church",
-    imageSrc:
-      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
-    description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+    date: "11 JUL 2022",
   },
   {
     title: "TOL July Meeting",
-    date: "26 JUL 2021",
-    time: "9:30AM",
-    location: "Community Bible Church",
-    imageSrc:
-      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
-    description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+    date: "25 JUL 2022",
   },
   {
     title: "TOL August Meeting",
-    date: "9 AUG 2021",
-    time: "9:30AM",
-    location: "Community Bible Church",
-    imageSrc:
-      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
-    description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+    date: "8 AUG 2022",
   },
   {
     title: "TOL August Meeting",
-    date: "23 AUG 2021",
-    time: "9:30AM",
-    location: "Community Bible Church",
-    imageSrc:
-      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
-    description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+    date: "22 AUG 2022",
   },
   {
     title: "TOL September Meeting",
-    date: "13 SEP 2021",
-    time: "9:30AM",
-    location: "Community Bible Church",
-    imageSrc:
-      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
-    description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+    date: "12 SEP 2022",
   },
   {
     title: "TOL September Meeting",
-    date: "27 SEP 2021",
-    time: "9:30AM",
-    location: "Community Bible Church",
-    imageSrc:
-      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
-    description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+    date: "26 SEP 2022",
   },
   {
     title: "TOL October Meeting",
-    date: "11 OCT 2021",
-    time: "9:30AM",
-    location: "Community Bible Church",
-    imageSrc:
-      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
-    description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+    date: "10 OCT 2022",
   },
   {
     title: "TOL October Meeting",
-    date: "25 OCT 2021",
-    time: "9:30AM",
-    location: "Community Bible Church",
-    imageSrc:
-      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
-    description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+    date: "24 OCT 2022",
   },
   {
     title: "TOL November Meeting",
-    date: "8 NOV 2021",
-    time: "9:30AM",
-    location: "Community Bible Church",
-    imageSrc:
-      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
-    description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+    date: "14 NOV 2022",
   },
   {
     title: "TOL November Meeting",
-    date: "22 NOV 2021",
-    time: "9:30AM",
-    location: "Community Bible Church",
-    imageSrc:
-      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
-    description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+    date: "28 NOV 2022",
   },
   {
     title: "TOL December Meeting",
-    date: "13 DEC 2021",
-    time: "9:30AM",
-    location: "Community Bible Church",
-    imageSrc:
-      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg",
-    description:
-      "We meet 9:30 am until 2:30 pm in room 221A at CBC's Administration and Education building. At 1:30 pm we break for lunch, devotions, prayer, and discuss any Threads of Love business.",
+    date: "12 DEC 2022",
   },
 ]
 const Today = new Date()
 const Events = data.filter((event) => {
-  console.log("event data", event)
   let eventDate = new Date(event.date)
   if (Today < eventDate) {
     return event
@@ -238,16 +122,16 @@ const Calendar = () => (
         <>
           <Row className="mb-5 mt-5">
             <Col md={3}>
-              <Image src={event.imageSrc} className="mb-1" fluid />
+              <Image src={MTG_IMG} className="mb-1" fluid />
               <p className="m-0 font-weight-bold">{event.date} </p>
-              <p className="m-0">{event.time}</p>
-              <p className="m-0 font-weight-light">{event.location}</p>
+              <p className="m-0">9:30 am</p>
+              <p className="m-0 font-weight-light">Community Bible Church</p>
             </Col>
             <Col md={3}>
               <h2 className="display-5 font-weight-light">{event.title}</h2>
             </Col>
             <Col>
-              <p className="text-muted">{event.description}</p>
+              <p className="text-muted">{MTG_DESCR}</p>
             </Col>
           </Row>
           <hr />
