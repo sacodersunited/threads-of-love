@@ -14,7 +14,7 @@ const Donate = () => (
         fluid
       />
       <Col md={7}>
-        <blockquote class="blockquote">
+        <blockquote className="blockquote">
           <p className="mt-0 text-italic mb-1">
             For even the Son of Man did not come to be served, but to serve as a
             ransom for many.

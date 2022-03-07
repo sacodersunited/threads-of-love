@@ -16,10 +16,8 @@ export const VolunteerPage = ({ boardMembers, images }) => (
               `}
             >
               <Card.Title>{user.name}</Card.Title>
-              <Card.Text>
-                <h4 className="text-uppercase h6 text-muted">
-                  {user.position}
-                </h4>
+              <Card.Text className="text-uppercase h6 text-muted">
+                {user.position}
                 {user.text}
               </Card.Text>
             </Card.Body>
@@ -30,7 +28,7 @@ export const VolunteerPage = ({ boardMembers, images }) => (
     <h2>Volunteers</h2>
     <Row className="mt-5 mb-5">
       {images.map((image) => (
-        <Col md={3} key={image.id}>
+        <Col key={image.id} md={3}>
           <a href={image.node.secure_url}>
             <Image
               src={image.node.secure_url.replace(
