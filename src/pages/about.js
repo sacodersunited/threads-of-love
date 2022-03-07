@@ -82,7 +82,7 @@ const About = () => (
           receives compensation for services.
         </p>
         <p>
-          We' re often asked why and how this ministry began. Click the button
+          We're often asked why and how this ministry began. Click the button
           below to listen as Founder <b>Sissy Davis</b> tells her Threads of
           Love story and song Stitches of Love.
         </p>
