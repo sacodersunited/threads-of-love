@@ -14,7 +14,7 @@ const GetInvolved = () => (
         <Col md={7}>
           <Image
             src="https://res.cloudinary.com/azrael/image/upload/v1580952914/20200123_1552071_fxwc4f.jpg"
-            className="mb-3"
+            className="mb-3 rounded w-100"
           />
           <div
             css={css`
