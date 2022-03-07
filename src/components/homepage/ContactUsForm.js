@@ -103,7 +103,7 @@ class ContactUsForm extends React.Component {
     )}`
 
     const querystring = `${eName}&${eEmail}&${ePhone}&${eComments}&formGoogleSheetName=responses`
-    console.log("querySTring", querystring)
+
     fetch(
       "https://script.google.com/macros/s/AKfycbzDuxNglZMjY0LJhHH0kBS6Wtkg9uquHA5AXgf_w1oQQg0zpUyf/exec?" +
         querystring,
