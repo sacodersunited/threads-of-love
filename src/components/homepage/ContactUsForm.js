@@ -143,7 +143,12 @@ class ContactUsForm extends React.Component {
       <Container className="contact-container">
         <Row>
           <Col md={6}>
-            <img id="contact-image" src={logo} alt="TOL logo" />
+            <img
+              id="contact-image"
+              src={logo}
+              alt="Threads of Love Logo"
+              className="w-100"
+            />
           </Col>
           <Col md={6} className="mt-5">
             <Form
