@@ -82,16 +82,16 @@ const About = () => (
           receives compensation for services.
         </p>
         <p>
-          We' re often asked why and how this ministry began. Click the button to
-          listen as Founder <b>Sissy Davis</b> tells her Threads of Love story
-          and song Stitches of Love.
+          We' re often asked why and how this ministry began. Click the button
+          below to listen as Founder <b>Sissy Davis</b> tells her Threads of
+          Love story and song Stitches of Love.
         </p>
         <a
           href="https://threadsoflove.org/videos/"
           target="_blank"
-          referrerPolicy="no-referrer"
+          rel="noreferrer"
         >
-          <Button variant="primary">Find out more</Button>
+          <Button variant="primary">Learn More</Button>
         </a>
       </Col>
     </RowWrapper>
@@ -125,7 +125,7 @@ const About = () => (
           <li>Christus Santa Rosa - New Braunfels, TX</li>
           <li>St. Luke's Baptist Hospital San Antonio, Tx</li>
           <li>Methodist Hospital Stone Oak - San Antonio, TX</li>
-          <li>Driscoll Children'  s Hospital - Corpus Christi, TX</li>
+          <li>Driscoll Children' s Hospital - Corpus Christi, TX</li>
           <li>Methodist Hospital Medical Center</li>
           <li>
             Eden' s Song Ministry - Home based in Lewiston, Idaho - Missionaries
