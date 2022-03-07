@@ -1,20 +1,20 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { Container, Image, Col, Row } from "react-bootstrap"
 import { FaPhoneSquare, FaEnvelope } from "react-icons/fa"
 import { css } from "@emotion/core"
 
 const GetInvolved = () => (
   <Layout>
-    <SEO title="Get Involved with Threads of Love" />
+    <Seo title="Get Involved with Threads of Love" />
     <h1>Get Involved</h1>
     <Container className="mb-5 mt-5">
       <Row>
         <Col md={7}>
           <Image
             src="https://res.cloudinary.com/azrael/image/upload/v1580952914/20200123_1552071_fxwc4f.jpg"
-            className="mb-3"
+            className="mb-3 rounded w-100"
           />
           <div
             css={css`

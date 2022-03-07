@@ -28,7 +28,6 @@ export const Header = ({ siteTitle, homepage }) => {
       className={!headerShow ? "bg-transparent" : null}
     >
       <Links siteTitle={siteTitle} />
-      {console.log(`headerShow  is ${headerShow}`)}
     </Navbar>
   ) : (
     <Navbar bg="light" variant="light" expand="lg" fixed="top">

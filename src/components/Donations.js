@@ -105,18 +105,24 @@ class Donations extends Component {
               </div>
             </Col>
             <Col md={6}>
-              <div style={{ textAlign: "center" }}>
-                <div style={{ color: "white", display: "inline" }}>
-                  <FaBaby
-                    size={100}
-                    style={{ padding: "5px" }}
-                    css={css`
-                      @media (max-width: 575.98px) {
-                        width: 60px;
-                      }
-                    `}
-                  />
-                </div>
+              <div
+                css={css`
+                  text: white;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  color: white;
+                `}
+              >
+                <FaBaby
+                  size={100}
+                  style={{ padding: "5px" }}
+                  css={css`
+                    @media (max-width: 575.98px) {
+                      width: 60px;
+                    }
+                  `}
+                />
                 <VisibilitySensor
                   onChange={this.onVisibilityChange}
                   offset={{
@@ -129,9 +135,9 @@ class Donations extends Component {
                     end={this.state.didViewCountUp ? 8205 : 0}
                     size={300}
                     separator=","
-                    duration="5"
+                    duration="200"
                     style={{
-                      fontSize: "-webkit-xxx-large",
+                      fontSize: "1.5rem",
                       paddingLeft: "10px",
                       paddingRight: "10px",
                       color: "white",

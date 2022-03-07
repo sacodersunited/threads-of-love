@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { Link } from "gatsby"
 import {
   Container,
@@ -31,7 +31,7 @@ const RowWrapper = ({ children, bkColor, txtColor }) => (
 const About = () => (
   <Layout isFullWidth>
     <Container>
-      <SEO title="About Threads Of Love" />
+      <Seo title="About Threads Of Love" />
 
       <h1>About Us </h1>
       <span>Threads of Love Radio Interview with Linda Coward.</span>
@@ -81,6 +81,18 @@ const About = () => (
           officer, director, or individual associated with the organization
           receives compensation for services.
         </p>
+        <p>
+          We're often asked why and how this ministry began. Click the button
+          below to listen as Founder <b>Sissy Davis</b> tells her Threads of
+          Love story and song Stitches of Love.
+        </p>
+        <a
+          href="https://threadsoflove.org/videos/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Button variant="primary">Learn More</Button>
+        </a>
       </Col>
     </RowWrapper>
 
@@ -105,18 +117,18 @@ const About = () => (
 
         <ul>
           <li>
-            Christus Santa Rosa Children’s Hospital – Downtown San Antonio TX
+            Christus Santa Rosa Children's Hospital - Downtown San Antonio TX
           </li>
           <li>
-            Christus Santa Rosa – Westover Hills, - Northwest San Antonio, TX
+            Christus Santa Rosa - Westover Hills, - Northwest San Antonio, TX
           </li>
-          <li>Christus Santa Rosa – New Braunfels, TX</li>
-          <li>St. Luke’s Baptist Hospital San Antonio, Tx</li>
-          <li>Methodist Hospital Stone Oak – San Antonio, TX</li>
-          <li>Driscoll Children’s Hospital – Corpus Christi, TX</li>
+          <li>Christus Santa Rosa - New Braunfels, TX</li>
+          <li>St. Luke's Baptist Hospital San Antonio, Tx</li>
+          <li>Methodist Hospital Stone Oak - San Antonio, TX</li>
+          <li>Driscoll Children' s Hospital - Corpus Christi, TX</li>
           <li>Methodist Hospital Medical Center</li>
           <li>
-            Eden’s Song Ministry – Home based in Lewiston, Idaho - Missionaries
+            Eden' s Song Ministry - Home based in Lewiston, Idaho - Missionaries
             to 60 countries
           </li>
         </ul>
@@ -201,7 +213,7 @@ const About = () => (
       </Col>
       <Col md={6} className="mt-5 mb-5">
         <Image
-          src="https://res.cloudinary.com/azrael/image/upload/c_scale,w_800/v1573686140/volunteers/IMG_8561_bfyavi.jpg"
+          src="https://res.cloudinary.com/azrael/image/upload/q_auto,f_auto/v1646016831/volunteers/DSC_0450_lofcjj.jpg"
           fluid
           thumbnail
         />

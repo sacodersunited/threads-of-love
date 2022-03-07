@@ -1,5 +1,5 @@
 import React from "react"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import LayoutHomepage from "../components/homepage/layoutHomepage"
 import Hero from "../components/homepage/hero"
 import ContactUsForm from "../components/homepage/ContactUsForm"
@@ -8,7 +8,7 @@ import Donations from "../components/Donations"
 
 const IndexPage = () => (
   <LayoutHomepage>
-    <SEO title="Home" />
+    <Seo title="Home" />
     <Hero />
     <Mission />
     <Donations />
