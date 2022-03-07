@@ -1,13 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { Container, Image, Col, Row } from "react-bootstrap"
 import { FaPhoneSquare, FaEnvelope } from "react-icons/fa"
 import { css } from "@emotion/core"
 
 const GetInvolved = () => (
   <Layout>
-    <SEO title="Get Involved with Threads of Love" />
+    <Seo title="Get Involved with Threads of Love" />
     <h1>Get Involved</h1>
     <Container className="mb-5 mt-5">
       <Row>

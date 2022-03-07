@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { Container, Col, Image } from "react-bootstrap"
 
 const Donate = () => (
   <Layout>
-    <SEO title="Donate to Threads of Love" />
+    <Seo title="Donate to Threads of Love" />
     <h1>Donate</h1>
     <Container className="mb-5 mt-5">
       <Image

@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { Container, Col, Row, Image } from "react-bootstrap"
 import CalendarDoc from "../docs/TOL-2022-calendar.jpeg"
 
@@ -105,7 +105,7 @@ const Events = data.filter((event) => {
 
 const Calendar = () => (
   <Layout>
-    <SEO title="Calendar for Threads of Love" />
+    <Seo title="Calendar for Threads of Love" />
     <Container>
       <h1>Calendar of Events</h1>
       <Col md={7}>

@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { Link } from "gatsby"
 import {
   Container,
@@ -31,7 +31,7 @@ const RowWrapper = ({ children, bkColor, txtColor }) => (
 const About = () => (
   <Layout isFullWidth>
     <Container>
-      <SEO title="About Threads Of Love" />
+      <Seo title="About Threads Of Love" />
 
       <h1>About Us </h1>
       <span>Threads of Love Radio Interview with Linda Coward.</span>

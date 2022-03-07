@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { Container, ResponsiveEmbed } from "react-bootstrap"
 
 const OurWork = () => (
   <Layout isFullWidth>
     <Container>
-      <SEO title="Ministry Favorites" />
+      <Seo title="Ministry Favorites" />
       <h1>Ministry Favorites</h1>
       <ResponsiveEmbed aspectRatio="16by9">
         <iframe
