@@ -46,7 +46,7 @@ const About = () => (
 
     <RowWrapper bkColor="rebeccapurple" txtColor="white">
       <Col md={6} className="mt-5 mb-5">
-        <ResponsiveEmbed aspectRatio="16by9" style={{ marginBottom: "10px" }}>
+        {/* <ResponsiveEmbed aspectRatio="16by9" style={{ marginBottom: "10px" }}>
           <iframe
             width="560"
             height="315"
@@ -56,7 +56,7 @@ const About = () => (
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
-        </ResponsiveEmbed>
+        </ResponsiveEmbed> */}
         <ResponsiveEmbed aspectRatio="16by9">
           <iframe
             width="560"
@@ -81,6 +81,7 @@ const About = () => (
           officer, director, or individual associated with the organization
           receives compensation for services.
         </p>
+        <h2>How Threads of Love Started</h2>
         <p>
           We're often asked why and how this ministry began. Click the button
           below to listen as Founder <b>Sissy Davis</b> tells her Threads of
@@ -144,6 +145,7 @@ const About = () => (
       </Col>
       <Col md={6} className="mt-5 mb-5">
         <Image
+          alt="women sewing baby clothes"
           src="https://res.cloudinary.com/azrael/image/upload/c_scale,w_800/v1573686139/IMG_8555_cyagdo.jpg"
           fluid
           thumbnail
@@ -157,6 +159,7 @@ const About = () => (
           src="https://res.cloudinary.com/azrael/image/upload/c_scale,w_800/v1573314518/cbcTOL/IMG_2736_bpwevr.jpg"
           fluid
           thumbnail
+          alt="Threads of Love meeting with CBC"
         />
       </Col>
       <Col md={6} className="mt-5 mb-5">
@@ -213,6 +216,7 @@ const About = () => (
       </Col>
       <Col md={6} className="mt-5 mb-5">
         <Image
+          alt="Threads of Love Baby products displayed on a table"
           src="https://res.cloudinary.com/azrael/image/upload/q_auto,f_auto/v1646016831/volunteers/DSC_0450_lofcjj.jpg"
           fluid
           thumbnail
@@ -223,6 +227,7 @@ const About = () => (
     <RowWrapper bkColor="rebeccapurple" txtColor="white">
       <Col md={6} className="mt-5 mb-5">
         <Image
+          alt="Group of heart pillows"
           src="https://res.cloudinary.com/azrael/image/upload/c_scale,w_800/v1573686134/IMG_8533_c4qvg4.jpg"
           fluid
           thumbnail

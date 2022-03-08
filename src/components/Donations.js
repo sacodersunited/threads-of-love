@@ -132,10 +132,10 @@ class Donations extends Component {
                 >
                   <CountUp
                     delay={2}
-                    end={this.state.didViewCountUp ? 8205 : 0}
+                    end={this.state.didViewCountUp ? 16822 : 15000}
                     size={300}
                     separator=","
-                    duration="200"
+                    duration="3"
                     style={{
                       fontSize: "1.5rem",
                       paddingLeft: "10px",
