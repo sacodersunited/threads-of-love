@@ -44,7 +44,7 @@ class Donations extends Component {
                 >
                   <CountUp
                     delay={2}
-                    end={this.state.didViewCountUp ? 7 : 0}
+                    end={this.state.didViewCountUp ? 8 : 0}
                     size={300}
                     separator=","
                     duration="3"
@@ -95,6 +95,7 @@ class Donations extends Component {
                     "Driscoll Children’s Hospital – Corpus Christi TX",
                     "Methodist Hospital Medical Center",
                     "Eden’s Song ministry",
+                    "University Hospital – San Antonio, TX",
                   ]}
                   css={css`
                     @media (max-width: 575.98px) {

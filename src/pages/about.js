@@ -124,10 +124,11 @@ const About = () => (
             Christus Santa Rosa - Westover Hills, - Northwest San Antonio, TX
           </li>
           <li>Christus Santa Rosa - New Braunfels, TX</li>
-          <li>St. Luke's Baptist Hospital San Antonio, Tx</li>
+          <li>St. Luke's Baptist Hospital San Antonio, TX</li>
           <li>Methodist Hospital Stone Oak - San Antonio, TX</li>
           <li>Driscoll Children' s Hospital - Corpus Christi, TX</li>
           <li>Methodist Hospital Medical Center</li>
+          <li>University Hospital - San Antonio, TX</li>
           <li>
             Eden' s Song Ministry - Home based in Lewiston, Idaho - Missionaries
             to 60 countries
