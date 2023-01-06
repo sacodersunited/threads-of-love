@@ -1,7 +1,6 @@
 import React from "react"
 import { Navbar, Container, Col, Row } from "react-bootstrap"
 import { Link } from "gatsby"
-import { FaFacebookF } from "react-icons/fa"
 import { css } from "@emotion/core"
 
 const Footer = () => (
@@ -26,12 +25,6 @@ const Footer = () => (
               {` `}
               <a href="https://www.gatsbyjs.org" className="text-white">
                 Gatsby
-              </a>
-              <a
-                className="text-white nav-link pl-0"
-                href="https://facebook.com"
-              >
-                <FaFacebookF /> Facebook
               </a>
             </p>
           </Col>

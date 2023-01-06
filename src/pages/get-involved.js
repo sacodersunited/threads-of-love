@@ -3,7 +3,6 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Container, Image, Col, Row } from "react-bootstrap"
 import { FaPhoneSquare, FaEnvelope } from "react-icons/fa"
-import { css } from "@emotion/core"
 
 const GetInvolved = () => (
   <Layout>
@@ -16,12 +15,7 @@ const GetInvolved = () => (
             src="https://res.cloudinary.com/azrael/image/upload/v1580952914/20200123_1552071_fxwc4f.jpg"
             className="mb-3 rounded w-100"
           />
-          <div
-            css={css`
-              border-left: 10px solid rebeccapurple;
-              padding-left: 10px;
-            `}
-          >
+          <div>
             <p className="lead">
               You're invited to help in our volunteer efforts for our community.
               Here are some ways for you to contact us. See the calendar section
