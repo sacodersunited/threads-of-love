@@ -10,13 +10,7 @@ const boardMembers = [
     imgSrc:
       "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1579835178/board%20members/D25A1637-Edit_crcxqb.jpg",
   },
-  {
-    id: 1157,
-    name: "Martha Hefling",
-    position: "Manager-Fabrics/Designs/Machines",
-    imgSrc:
-      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1579835178/board%20members/D25A1157_uy4hej.jpg",
-  },
+
   {
     id: 1152,
     name: "Penni Harben",
@@ -40,11 +34,17 @@ const boardMembers = [
       "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1579835178/board%20members/D25A1164-Edit_l6nbwb.jpg",
   },
   {
-    id: 1150,
-    name: "Janice Young",
-    position: "Manager Interment Production",
+    id: 1165,
+    name: "Phyllis Graham",
+    position: "Directer of Internment",
     imgSrc:
-      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1579835178/board%20members/D25A1150_ehfkeb.jpg",
+      "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1579835178/board%20members/PhyllisGraham.jpg",
+  },
+  {
+    id: 1166,
+    name: "Volunteer!",
+    position: "Empty Position",
+    imgSrc: "",
   },
 ]
 

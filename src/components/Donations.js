@@ -44,7 +44,7 @@ class Donations extends Component {
                 >
                   <CountUp
                     delay={2}
-                    end={this.state.didViewCountUp ? 8 : 0}
+                    end={this.state.didViewCountUp ? 9 : 0}
                     size={300}
                     separator=","
                     duration="3"
@@ -96,6 +96,7 @@ class Donations extends Component {
                     "Methodist Hospital Medical Center",
                     "Eden’s Song ministry",
                     "University Hospital – San Antonio, TX",
+                    "Driscoll Christus Spohn Neonatal Care Center - Corpus Christi, Texas",
                   ]}
                   css={css`
                     @media (max-width: 575.98px) {
@@ -133,7 +134,7 @@ class Donations extends Component {
                 >
                   <CountUp
                     delay={2}
-                    end={this.state.didViewCountUp ? 16822 : 15000}
+                    end={this.state.didViewCountUp ? 68787 : 15000}
                     size={300}
                     separator=","
                     duration="3"

@@ -16,7 +16,7 @@ const Mission = () => (
         in hospitals and burial items to families whose baby was unable to
         survive the premature birth.
       </p>
-      <p>
+      <p className="lead font-weight-light">
         Our ministry is not only to the infant but also to family members. We
         pray to reach them during their pain and fears or when stress may be too
         difficult to endure.

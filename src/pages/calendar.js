@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Container, Col, Row, Image } from "react-bootstrap"
-import CalendarDoc from "../docs/TOL-2023-calendar.jpg"
+import CalendarDoc from "../docs/TOL 2024 TOLFHS MEETINGS CALENDAR 1 FEB 2024.pdf"
 
 const MTG_IMG =
   "https://res.cloudinary.com/azrael/image/upload/c_scale,w_300/v1573314518/cbcTOL/D25A9943_aifraa.jpg"

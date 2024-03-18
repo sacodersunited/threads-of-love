@@ -21,9 +21,9 @@ module.exports = {
     {
       resolve: `gatsby-source-cloudinary`,
       options: {
-        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
-        apiKey: process.env.CLOUDINARY_API_KEY,
-        apiSecret: process.env.CLOUDINARY_API_SECRET,
+        cloudName: `azrael`,
+        apiKey: `225261681866858`,
+        apiSecret: `KeNeWXZEHzRlLgoMXMrrC5rmwf0`,
         resourceType: "",
         type: ``,
         maxResults: 500,
