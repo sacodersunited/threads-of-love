@@ -1,6 +1,6 @@
 import React from "react"
 import { Container } from "react-bootstrap"
-import { css } from "@emotion/core"
+import { css } from "@emotion/react"
 
 const Hero = () => (
   <div

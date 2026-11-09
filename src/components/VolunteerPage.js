@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Row, Col, Card, Image } from "react-bootstrap"
-import { css } from "@emotion/core"
+import { css } from "@emotion/react"
 
 export const VolunteerPage = ({ boardMembers, images }) => (
   <Container>

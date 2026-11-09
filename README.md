@@ -19,7 +19,41 @@
 
 ## Images
 
-Images are hosted on [cloudinary](https://cloudinary.com) and organized by folders and tags. GraphQL queries are based on tags for **volunteers** for the Volunteers page.
+Images are hosted on [Cloudinary](https://cloudinary.com). The Volunteers page uses
+the `volunteer` tag. Without credentials, development and builds use the 34 public
+gallery images saved in `src/data/volunteer-images.json` from the published site.
+
+To fetch the current gallery, copy `.env.example` to `.env.development` and set
+all three Cloudinary values. For production, configure the same variables in the
+hosting provider or `.env.production`. Never commit credentials. Rotate the API
+secret previously committed in `gatsby-config.js`; removing it from the current
+file does not remove it from Git history.
+
+## Local development
+
+Use Node.js 24 (see `.nvmrc`). With fnm:
+
+```sh
+fnm use --install-if-missing
+npm ci
+npm run develop
+```
+
+Open http://localhost:8000/calendar/ to review the calendar cleanup, or
+http://localhost:8000/ for the home page.
+
+The project `.npmrc` enables legacy peer resolution because Gatsby's internal
+packages and `react-text-loop` retain older React peer declarations. The site
+uses React 18, and the lockfile records the tested dependency tree.
+
+```sh
+npm test
+npm run build
+npm audit --audit-level=critical
+```
+
+The audit command fails for critical findings and still reports lower-severity
+findings. Set the hosting provider to Node.js 24 before deploying this upgrade.
 
 ## From Gatsby
 

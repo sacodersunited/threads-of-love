@@ -4,7 +4,7 @@ import CountUp from "react-countup"
 import VisibilitySensor from "react-visibility-sensor"
 import TextLoop from "react-text-loop"
 import { FaBaby, FaHospital } from "react-icons/fa"
-import { css } from "@emotion/core"
+import { css } from "@emotion/react"
 
 class Donations extends Component {
   state = {
