@@ -1,4 +1,3 @@
-const config = require("gatsby-plugin-config").default
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
@@ -18,19 +17,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-source-cloudinary`,
-      options: {
-        cloudName: `azrael`,
-        apiKey: `225261681866858`,
-        apiSecret: `KeNeWXZEHzRlLgoMXMrrC5rmwf0`,
-        resourceType: "",
-        type: ``,
-        maxResults: 500,
-        tags: true,
-        prefix: ``,
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -45,10 +31,6 @@ module.exports = {
         icon: `src/images/heart-favicon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
-    `gatsby-plugin-netlify-cache`,
     `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-google-analytics`,

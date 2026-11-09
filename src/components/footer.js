@@ -1,7 +1,7 @@
 import React from "react"
 import { Navbar, Container, Col, Row } from "react-bootstrap"
 import { Link } from "gatsby"
-import { css } from "@emotion/core"
+import { css } from "@emotion/react"
 
 const Footer = () => (
   <>

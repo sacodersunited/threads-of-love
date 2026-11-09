@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Col } from "react-bootstrap"
-import { css } from "@emotion/core"
+import { css } from "@emotion/react"
 
 const Mission = () => (
   <Container
