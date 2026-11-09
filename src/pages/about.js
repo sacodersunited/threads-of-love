@@ -62,10 +62,11 @@ const About = () => (
             width="560"
             height="315"
             src="https://www.youtube.com/embed/Fyb91qeHCJc"
-            frameborder="0"
+            referrerPolicy="strict-origin-when-cross-origin"
+            frameBorder="0"
             title="TOL Radio"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </ResponsiveEmbed>
       </Col>

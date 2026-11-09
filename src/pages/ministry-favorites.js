@@ -14,9 +14,10 @@ const OurWork = () => (
           height="315"
           title="TOL invite"
           src="https://www.youtube.com/embed/GJiMz0E09eM"
-          frameborder="0"
+          referrerPolicy="strict-origin-when-cross-origin"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </ResponsiveEmbed>
     </Container>
